@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Final Report</title><style>
+*{box-sizing:border-box}body{font-family:-apple-system,system-ui,sans-serif;background:#0a0e14;color:#c9d1d9;margin:0;padding:20px}
+h1{color:#58a6ff;border-bottom:2px solid #30363d;padding-bottom:10px}
+h2{color:#58a6ff;margin-top:35px}
+.time{color:#8b949e;font-size:13px;margin-bottom:15px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-size:11px;text-transform:uppercase;background:#161b22}
+tr:hover{background:#161b22}.pos{color:#3fb950}.neg{color:#f85149}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;margin:20px 0}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px}
+.card .label{color:#8b949e;font-size:12px;text-transform:uppercase}
+.card .value{font-size:24px;font-weight:700;margin-top:8px}
+.card .sub{color:#8b949e;font-size:13px;margin-top:8px}
+.warn{background:#1c2128;border-left:3px solid #d29922;padding:15px;border-radius:6px;margin:15px 0}
+.info{background:#161b22;border-left:3px solid #58a6ff;padding:15px;border-radius:6px;margin:15px 0}
+</style></head><body>
+<h1>Crypto Carry - Final Report</h1>
+<div class="time">Generated: 2026-09-19 01:32 UTC</div>
+<div class="info"><b>Core (real edge):</b> Carry funding arb, 20 symbols, long spot + short perp</div>
+<div class="warn"><b>Side (research only):</b> Directional HTF daily — works partially, keep in log, do NOT trade</div>
+<div class="grid"><div class="card"><div class="label">CARRY (core, 20 symbols)</div>
+          <div class="value pos">CAGR +15.54%</div>
+          <div class="sub">Sharpe 15.05 | DD +0.00% | Total +106.0%</div>
+          <div class="sub">Winner: real edge, positive in bear market</div></div></div>
+<h2>Latest Directional Signals (research)</h2>
+<table><tr><th>Symbol</th><th>Date</th><th>Close</th><th>RSI</th><th>ATR%</th><th>Signal</th><th>Entry</th><th>Stop</th><th>Take</th></tr>
+<tr><td><b>BTCUSDT</b></td><td>2026-09-19</td>
+          <td>$81523.42</td><td>56.2</td><td>2.75%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>$81523.42</td><td class="neg">$77047.0329</td>
+          <td class="pos">$92714.3879</td></tr><tr><td><b>ETHUSDT</b></td><td>2026-09-19</td>
+          <td>$2623.45</td><td>62.3</td><td>3.98%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>$2623.45</td><td class="neg">$2414.5414</td>
+          <td class="pos">$3145.7214</td></tr><tr><td><b>SOLUSDT</b></td><td>2026-09-19</td>
+          <td>$113.59</td><td>64.0</td><td>4.3%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>$113.59</td><td class="neg">$103.8286</td>
+          <td class="pos">$137.9936</td></tr></table>
+<h2>Directional Backtest (research)</h2>
+<table><tr><th>Symbol</th><th>Trades</th><th>Win%</th><th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th><th>PF</th><th>Expectancy</th><th>Stops</th><th>Takes</th></tr>
+<tr><td><b>BTCUSDT</b></td><td>33</td>
+          <td class="neg">33.3%</td>
+          <td class="neg">-34.09%</td>
+          <td>+4.02%</td><td>-3.56%</td>
+          <td class="neg">0.56</td>
+          <td>-1.03%</td>
+          <td>33</td><td>0</td></tr><tr><td><b>ETHUSDT</b></td><td>53</td>
+          <td class="neg">34.0%</td>
+          <td class="pos">+106.23%</td>
+          <td>+17.14%</td><td>-5.78%</td>
+          <td class="pos">1.52</td>
+          <td>+2.00%</td>
+          <td>50</td><td>3</td></tr><tr><td><b>XRPUSDT</b></td><td>49</td>
+          <td class="neg">32.7%</td>
+          <td class="neg">-23.28%</td>
+          <td>+13.43%</td><td>-7.22%</td>
+          <td class="neg">0.9</td>
+          <td>-0.48%</td>
+          <td>48</td><td>1</td></tr><tr><td><b>SOLUSDT</b></td><td>54</td>
+          <td class="neg">35.2%</td>
+          <td class="neg">-91.32%</td>
+          <td>+10.27%</td><td>-8.18%</td>
+          <td class="neg">0.68</td>
+          <td>-1.69%</td>
+          <td>53</td><td>1</td></tr></table></body></html>

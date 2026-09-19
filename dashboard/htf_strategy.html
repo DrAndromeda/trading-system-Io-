@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>HTF Strategy</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0e14;color:#c9d1d9;margin:0;padding:20px}
+h1{color:#58a6ff;border-bottom:2px solid #30363d;padding-bottom:10px}
+h2{color:#58a6ff;margin-top:35px}
+.time{color:#8b949e;font-size:13px;margin-bottom:15px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-size:11px;text-transform:uppercase;background:#161b22}
+tr:hover{background:#161b22}
+.pos{color:#3fb950}.neg{color:#f85149}
+.info{background:#161b22;border-left:3px solid #58a6ff;padding:15px;border-radius:6px;margin:15px 0}
+.info b{color:#58a6ff}
+</style></head>
+<body>
+<h1>HTF Strategy - Daily Signals</h1>
+<div class="time">Generated: 2026-09-19 01:29 UTC</div>
+<div class="info">
+<b>Rules:</b> EMA20 vs EMA50 trend + RSI filter | Entry on next open | SL = 2xATR | TP = 2xATR x RR(2.0) | Fee 0.1%
+</div>
+<h2>Latest Signals</h2>
+<table>
+<tr><th>Symbol</th><th>Date</th><th>Close</th><th>EMA20</th><th>EMA50</th><th>RSI</th><th>ATR%</th><th>Signal</th><th>Entry</th><th>Stop</th><th>Take</th></tr>
+<tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2026-09-19</td>
+          <td>$81523.42</td>
+          <td>77793.6721</td>
+          <td>74348.2847</td>
+          <td>56.2</td>
+          <td>2.75%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>81523.42</td>
+          <td class="neg">77047.0329</td>
+          <td class="pos">90476.1943</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2026-09-19</td>
+          <td>$2623.45</td>
+          <td>2469.2077</td>
+          <td>2307.4075</td>
+          <td>62.3</td>
+          <td>3.98%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>2623.45</td>
+          <td class="neg">2414.5414</td>
+          <td class="pos">3041.2671</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2026-09-19</td>
+          <td>$113.59</td>
+          <td>102.0847</td>
+          <td>94.62</td>
+          <td>64.0</td>
+          <td>4.3%</td>
+          <td class="pos"><b>LONG</b></td>
+          <td>113.59</td>
+          <td class="neg">103.8286</td>
+          <td class="pos">133.1129</td>
+        </tr>
+</table>
+<h2>Backtest Results</h2>
+<table>
+<tr><th>Symbol</th><th>Trades</th><th>Win Rate</th><th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th><th>Profit Factor</th><th>Expectancy</th><th>Stops</th><th>Takes</th></tr>
+<tr>
+          <td><b>BTCUSDT</b></td>
+          <td>29</td>
+          <td class="neg">24.1%</td>
+          <td class="neg">-47.80%</td>
+          <td>+14.45%</td>
+          <td>-6.77%</td>
+          <td class="neg">0.68</td>
+          <td>-1.65%</td>
+          <td>22</td>
+          <td>7</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>26</td>
+          <td class="neg">42.3%</td>
+          <td class="pos">+112.33%</td>
+          <td>+26.06%</td>
+          <td>-11.62%</td>
+          <td class="pos">1.64</td>
+          <td>+4.32%</td>
+          <td>15</td>
+          <td>11</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>14</td>
+          <td class="neg">35.7%</td>
+          <td class="pos">+60.27%</td>
+          <td>+35.64%</td>
+          <td>-13.10%</td>
+          <td class="pos">1.51</td>
+          <td>+4.30%</td>
+          <td>9</td>
+          <td>5</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>26</td>
+          <td class="neg">30.8%</td>
+          <td class="neg">-18.70%</td>
+          <td>+28.70%</td>
+          <td>-13.79%</td>
+          <td class="neg">0.92</td>
+          <td>-0.72%</td>
+          <td>18</td>
+          <td>8</td>
+        </tr>
+</table>
+</body></html>
