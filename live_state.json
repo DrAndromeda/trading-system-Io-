@@ -253,8 +253,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 6,
-  "cycle": 84,
+  "pushes": 7,
+  "cycle": 96,
   "positions": {
     "XRPUSDT": {
       "symbol": "XRPUSDT",

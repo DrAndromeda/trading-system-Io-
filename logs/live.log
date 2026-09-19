@@ -1295,3 +1295,88 @@
 [22:14:21]   ✅ BNBUSDT: LONG         conf=82% RSI=57.6/62.1/83.9/50.9
 [22:14:26]     LINKUSDT: WAIT         conf=76% RSI=58.6/68.1/84.6/54.5
 [22:14:32]     PAXGUSDT: WAIT         conf=45% RSI=51.7/49.2/61.0/42.1
+[22:14:34] ✅ pushed
+[22:14:34] Sleep 180s...
+
+[22:17:39]     ETHUSDT: WAIT         conf=74% RSI=56.3/74.7/83.5/62.6
+[22:17:44]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=52.1/66.9/80.3/52.1
+[22:17:49]   ✅ BNBUSDT: LONG         conf=82% RSI=53.9/61.6/83.9/50.8
+[22:17:55]     LINKUSDT: WAIT         conf=71% RSI=60.1/68.1/84.5/54.5
+[22:18:00]     PAXGUSDT: WAIT         conf=45% RSI=51.8/49.2/61.0/42.1
+[22:18:00] Sleep 180s...
+
+[22:21:05]     ETHUSDT: WAIT         conf=74% RSI=54.2/74.0/83.4/62.5
+[22:21:10]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=50.9/65.8/80.2/52.0
+[22:21:15]   ✅ BNBUSDT: LONG         conf=82% RSI=52.4/60.5/83.7/50.7
+[22:21:21]   ✅ LINKUSDT: LONG         conf=79% RSI=58.4/67.5/84.4/54.4
+[22:21:26]     PAXGUSDT: WAIT         conf=53% RSI=54.0/50.0/61.0/42.1
+[22:21:26] Sleep 180s...
+
+[22:24:31]     ETHUSDT: WAIT         conf=74% RSI=53.8/73.9/83.4/62.5
+[22:24:36]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=51.1/65.9/80.2/52.0
+[22:24:42]   ✅ BNBUSDT: LONG         conf=82% RSI=54.1/61.8/83.9/50.8
+[22:24:47]     LINKUSDT: WAIT         conf=75% RSI=62.5/69.1/84.7/54.6
+[22:24:52]     PAXGUSDT: WAIT         conf=45% RSI=53.9/50.0/61.0/42.1
+[22:24:52] Sleep 180s...
+
+[22:27:57]     ETHUSDT: WAIT         conf=74% RSI=50.5/73.0/83.2/62.4
+[22:28:02]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=49.4/64.4/80.0/51.8
+[22:28:07]   ✅ BNBUSDT: LONG         conf=82% RSI=51.6/60.0/83.7/50.6
+[22:28:12]     LINKUSDT: WAIT         conf=80% RSI=62.0/68.9/84.7/54.6
+[22:28:17]     PAXGUSDT: WAIT         conf=53% RSI=54.0/50.0/61.0/42.1
+[22:28:17] Sleep 180s...
+
+[22:31:22]     ETHUSDT: WAIT         conf=67% RSI=44.8/71.8/82.9/62.3
+[22:31:28]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=47.5/61.3/78.6/51.6
+[22:31:33]   ✅ BNBUSDT: LONG         conf=82% RSI=49.6/58.4/83.2/50.4
+[22:31:38]   ✅ LINKUSDT: LONG         conf=83% RSI=61.5/67.4/84.4/54.4
+[22:31:43]     PAXGUSDT: WAIT         conf=45% RSI=53.8/50.0/61.0/42.1
+[22:31:43] Sleep 180s...
+
+[22:34:48]     ETHUSDT: WAIT         conf=74% RSI=47.6/73.1/83.3/62.4
+[22:34:53]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=47.8/61.6/78.8/51.6
+[22:34:58]   ✅ BNBUSDT: LONG         conf=82% RSI=48.8/57.7/82.7/50.3
+[22:35:05]   ✅ LINKUSDT: LONG         conf=83% RSI=56.0/65.8/84.2/54.2
+[22:35:10]     PAXGUSDT: WAIT         conf=53% RSI=54.0/50.1/61.0/42.1
+[22:35:10] Sleep 180s...
+
+[22:38:15]     ETHUSDT: WAIT         conf=74% RSI=50.1/73.9/83.4/62.5
+[22:38:20]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=50.8/64.5/80.0/51.9
+[22:38:25]   ✅ BNBUSDT: LONG         conf=82% RSI=50.7/59.2/83.6/50.5
+[22:38:30]   ✅ LINKUSDT: LONG         conf=83% RSI=61.6/67.5/84.5/54.4
+[22:38:35]     PAXGUSDT: WAIT         conf=50% RSI=51.8/49.3/61.0/42.1
+[22:38:35] Sleep 180s...
+
+[22:41:40]     ETHUSDT: WAIT         conf=74% RSI=53.4/75.0/83.5/62.7
+[22:41:45]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=51.1/64.8/80.1/51.9
+[22:41:50]   ✅ BNBUSDT: LONG         conf=82% RSI=52.1/60.4/83.7/50.8
+[22:41:55]     LINKUSDT: WAIT         conf=80% RSI=65.3/69.0/84.7/54.6
+[22:42:01]     PAXGUSDT: WAIT         conf=58% RSI=59.4/52.4/61.2/42.2
+[22:42:01] Sleep 180s...
+
+[22:45:06]     ETHUSDT: WAIT         conf=74% RSI=58.7/76.5/83.7/62.9
+[22:45:11]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=56.2/66.9/80.3/52.1
+[22:45:16]   ✅ BNBUSDT: LONG         conf=82% RSI=51.1/61.0/83.8/50.7
+[22:45:21]     LINKUSDT: WAIT         conf=75% RSI=63.4/68.4/84.6/54.5
+[22:45:26]     PAXGUSDT: WAIT         conf=53% RSI=57.1/52.3/61.2/42.2
+[22:45:26] Sleep 180s...
+
+[22:48:32]     ETHUSDT: WAIT         conf=74% RSI=53.0/74.7/83.5/62.6
+[22:48:37]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=53.0/63.8/79.7/51.8
+[22:48:42]   ✅ BNBUSDT: LONG         conf=82% RSI=48.2/58.7/83.4/50.4
+[22:48:47]   ✅ LINKUSDT: LONG         conf=83% RSI=58.8/67.1/84.4/54.3
+[22:48:52]     PAXGUSDT: WAIT         conf=53% RSI=57.1/52.3/61.2/42.2
+[22:48:52] Sleep 180s...
+
+[22:51:57]     ETHUSDT: WAIT         conf=74% RSI=56.1/75.7/83.6/62.8
+[22:52:02]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=52.8/63.5/79.6/51.8
+[22:52:07]   ✅ BNBUSDT: LONG         conf=82% RSI=49.2/59.5/83.6/50.6
+[22:52:12]   ✅ LINKUSDT: LONG         conf=83% RSI=60.2/67.5/84.5/54.4
+[22:52:17]     PAXGUSDT: WAIT         conf=53% RSI=52.3/50.7/61.1/42.1
+[22:52:17] Sleep 180s...
+
+[22:55:22]     ETHUSDT: WAIT         conf=79% RSI=52.2/74.4/83.4/62.6
+[22:55:27]   ⚠️ XRPUSDT: WEAK_LONG    conf=73% RSI=52.4/63.3/79.4/51.7
+[22:55:32]   ✅ BNBUSDT: LONG         conf=82% RSI=47.7/58.2/83.1/50.3
+[22:55:37]   ✅ LINKUSDT: LONG         conf=83% RSI=57.8/66.8/84.3/54.3
+[22:55:42]     PAXGUSDT: WAIT         conf=53% RSI=52.4/50.7/61.1/42.1
