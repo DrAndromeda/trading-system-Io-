@@ -1,6 +1,13 @@
 .venv/
 __pycache__/
 *.pyc
-data/*.csv
 .env
 .DS_Store
+data/raw/
+data/cache/
+data/quarterly/
+data/*.csv
+data/*.parquet
+data/*.json
+data/*.npz
+!data/onchain/blockchain_info.json
