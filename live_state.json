@@ -251,32 +251,57 @@
       "size": 945.945946,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-19T15:58:56.499040+00:00",
+      "symbol": "XRPUSDT",
+      "signal": "LONG",
+      "confidence": 77,
+      "price": 1.43,
+      "rsi": {
+        "15m": 50.6,
+        "1h": 61.3,
+        "4h": 78.6,
+        "6h": 79.2,
+        "12h": 57.8,
+        "1d": 51.5,
+        "3d": 71.9,
+        "1w": 58.8,
+        "1M": 19.0
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "down",
+        "12h": "up",
+        "1d": "up",
+        "3d": "down",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.65,
+      "entry": 1.43,
+      "stop": 1.411386,
+      "take": 1.476536,
+      "size": 5372.217959,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 7,
-  "cycle": 96,
+  "pushes": 8,
+  "cycle": 108,
   "positions": {
-    "XRPUSDT": {
-      "symbol": "XRPUSDT",
-      "entry": 1.4164,
-      "stop": 1.429986,
-      "initial_stop": 1.397586,
-      "take": 1.463436,
-      "size": 5315.110099,
-      "entry_ts": "2026-09-19T08:27:39.945568+00:00",
-      "confidence": 78,
-      "trail_updates": 7
-    },
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2639.29,
-      "stop": 2627.765714,
+      "stop": 2639.615714,
       "initial_stop": 2627.765714,
       "take": 2668.100714,
       "size": 5.683347,
       "entry_ts": "2026-09-19T14:47:05.971953+00:00",
       "confidence": 82,
-      "trail_updates": 0
+      "trail_updates": 1
     },
     "BNBUSDT": {
       "symbol": "BNBUSDT",
@@ -320,6 +345,21 @@
       "exit_price": 12.450143,
       "exit_reason": "STOP",
       "pnl_pct": 1.15
+    },
+    {
+      "symbol": "XRPUSDT",
+      "entry": 1.4164,
+      "stop": 1.429986,
+      "initial_stop": 1.397586,
+      "take": 1.463436,
+      "size": 5315.110099,
+      "entry_ts": "2026-09-19T08:27:39.945568+00:00",
+      "confidence": 78,
+      "trail_updates": 7,
+      "exit_ts": "2026-09-19T16:02:37.740947+00:00",
+      "exit_price": 1.429986,
+      "exit_reason": "STOP",
+      "pnl_pct": 0.96
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
