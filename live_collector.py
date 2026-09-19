@@ -97,8 +97,16 @@ def git_push():
         log(f"git error: {e}")
         return False
 
-def fetch_data(ex, sym):
-    ohlcv = ex.fetch_ohlcv(sym, "1h", limit=200)
+def fetch_data(ex, sym, retries=3):
+    for attempt in range(retries):
+        try:
+            ohlcv = ex.fetch_ohlcv(sym, "1h", limit=200)
+            break
+        except Exception as e:
+            if attempt < retries - 1:
+                time.sleep(3 * (attempt + 1))
+            else:
+                raise
     df = pd.DataFrame(ohlcv, columns=["ts","open","high","low","close","volume"])
     df["ts"] = pd.to_datetime(df["ts"], unit="ms", utc=True).dt.tz_localize(None)
     df = df.set_index("ts")
@@ -256,6 +264,7 @@ def one_cycle(ex, state):
 
     for sym in SYMBOLS:
         try:
+            import time as _t; _t.sleep(1.5)
             df, funding = fetch_data(ex, sym)
             sig = compute_signal(df, funding, sym)
             latest.append(sig)
