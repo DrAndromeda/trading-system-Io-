@@ -289,32 +289,9 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 8,
-  "cycle": 108,
-  "positions": {
-    "ETHUSDT": {
-      "symbol": "ETHUSDT",
-      "entry": 2639.29,
-      "stop": 2639.615714,
-      "initial_stop": 2627.765714,
-      "take": 2668.100714,
-      "size": 5.683347,
-      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
-      "confidence": 82,
-      "trail_updates": 1
-    },
-    "BNBUSDT": {
-      "symbol": "BNBUSDT",
-      "entry": 770.38,
-      "stop": 765.242857,
-      "initial_stop": 765.242857,
-      "take": 783.222857,
-      "size": 19.466073,
-      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
-      "confidence": 86,
-      "trail_updates": 0
-    }
-  },
+  "pushes": 9,
+  "cycle": 120,
+  "positions": {},
   "closed": [
     {
       "symbol": "ETHUSDT",
@@ -360,6 +337,36 @@
       "exit_price": 1.429986,
       "exit_reason": "STOP",
       "pnl_pct": 0.96
+    },
+    {
+      "symbol": "BNBUSDT",
+      "entry": 770.38,
+      "stop": 765.242857,
+      "initial_stop": 765.242857,
+      "take": 783.222857,
+      "size": 19.466073,
+      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
+      "confidence": 86,
+      "trail_updates": 0,
+      "exit_ts": "2026-09-19T17:49:13.104615+00:00",
+      "exit_price": 765.242857,
+      "exit_reason": "STOP",
+      "pnl_pct": -0.67
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2639.29,
+      "stop": 2639.915714,
+      "initial_stop": 2627.765714,
+      "take": 2668.100714,
+      "size": 5.683347,
+      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
+      "confidence": 82,
+      "trail_updates": 2,
+      "exit_ts": "2026-09-19T18:13:13.041137+00:00",
+      "exit_price": 2639.915714,
+      "exit_reason": "STOP",
+      "pnl_pct": 0.02
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
