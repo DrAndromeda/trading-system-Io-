@@ -14,7 +14,7 @@ for p in [DASH, LOGS]: p.mkdir(exist_ok=True)
 STATE = ROOT/"live_state.json"
 SIGNALS_LOG = LOGS/"signals_confirmed.jsonl"
 
-SYMBOLS = ["ETHUSDT", "XRPUSDT", "BNBUSDT", "LINKUSDT", "PAXGUSDT", "XAUTUSDT"]
+SYMBOLS = ["ETHUSDT", "XRPUSDT", "BNBUSDT", "LINKUSDT", "PAXGUSDT"]
 TIMEFRAMES = ["15m", "1h", "4h", "6h", "12h", "1d", "3d", "1w", "1M"]
 RR = 2.5
 SL_ATR = 2.0
@@ -22,7 +22,7 @@ CAPITAL = 10000.0
 RISK_PCT = 1.0
 MAX_POSITIONS = 3
 MAX_NOTIONAL_PER_TRADE = 15000
-POLL_SEC = 300
+POLL_SEC = 180
 PUSH_EVERY_N = 12
 MIN_CONFIDENCE = 75
 
@@ -100,7 +100,9 @@ def fetch_funding(ex, sym):
         return 0
 
 def analyze_tf(df, tf_name):
-    if len(df) < 100: return None
+    if len(df) < 50:
+        log(f"    analyze_tf {tf_name}: only {len(df)} bars (need 50)")
+        return None
     d = df.copy()
     d["ema20"] = ema(d["close"],20)
     d["ema50"] = ema(d["close"],50)
