@@ -1,0 +1,68 @@
+[08:47:48] LIVE COLLECTOR v2 STARTED (confidence filter)
+[08:47:48] Symbols: ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'SOLUSDT'] | Poll: 300s | Push: every 12 cycles | Conf threshold: 75
+[08:47:48] State: cycle=1 signals=0
+[08:47:50]     BTCUSDT: OVERBOUGHT   conf=45% RSI=79.1 $81277.0
+[08:47:50]     ETHUSDT: OVERBOUGHT   conf=45% RSI=78.4 $2616.1
+[08:47:50]     XRPUSDT: OVERBOUGHT   conf=60% RSI=75.2 $1.4081
+[08:47:50]     SOLUSDT: OVERBOUGHT   conf=45% RSI=83.6 $113.72
+[08:47:50] Sleep 300s...
+
+[08:52:50]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[08:52:50]     ETHUSDT: OVERBOUGHT   conf=45% RSI=77.5 $2614.02
+[08:52:50]     XRPUSDT: OVERBOUGHT   conf=60% RSI=75.9 $1.411
+[08:52:51]     SOLUSDT: OVERBOUGHT   conf=45% RSI=83.5 $113.66
+[08:52:51] Sleep 300s...
+
+[08:57:51]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[08:57:51]     ETHUSDT: OVERBOUGHT   conf=45% RSI=77.4 $2613.75
+[08:57:51]     XRPUSDT: OVERBOUGHT   conf=60% RSI=75.7 $1.4102
+[08:57:51]     SOLUSDT: OVERBOUGHT   conf=45% RSI=82.3 $113.48
+[08:57:51] Sleep 300s...
+
+[09:02:51]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:02:51]     ETHUSDT: OVERBOUGHT   conf=45% RSI=79.4 $2612.74
+[09:02:51]     XRPUSDT: OVERBOUGHT   conf=60% RSI=75.5 $1.4113
+[09:02:52]     SOLUSDT: OVERBOUGHT   conf=45% RSI=81.4 $113.36
+[09:02:52] Sleep 300s...
+
+[09:07:52]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:07:52]     ETHUSDT: OVERBOUGHT   conf=45% RSI=79.2 $2612.08
+[09:07:52]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.2 $1.4138
+[09:07:52]     SOLUSDT: OVERBOUGHT   conf=60% RSI=81.9 $113.47
+[09:07:52] Sleep 300s...
+
+[09:12:52]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:12:52]     ETHUSDT: OVERBOUGHT   conf=45% RSI=79.8 $2616.42
+[09:12:53]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.8 $1.418
+[09:12:53]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.0 $113.57
+[09:12:53] Sleep 300s...
+
+[09:17:53]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:17:53]     ETHUSDT: OVERBOUGHT   conf=45% RSI=79.6 $2614.29
+[09:17:53]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.2 $1.4137
+[09:17:53]     SOLUSDT: OVERBOUGHT   conf=60% RSI=81.9 $113.5
+[09:17:53] Sleep 300s...
+
+[09:22:53]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:22:53]     ETHUSDT: OVERBOUGHT   conf=45% RSI=79.9 $2617.38
+[09:22:54]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.6 $1.4169
+[09:22:54]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.2 $113.67
+[09:22:54] Sleep 300s...
+
+[09:27:54]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:27:54]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.1 $2619.12
+[09:27:54]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.9 $1.4186
+[09:27:54]     SOLUSDT: OVERBOUGHT   conf=60% RSI=81.9 $113.46
+[09:27:54] Sleep 300s...
+
+[09:32:54]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:32:55]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.3 $2620.6
+[09:32:55]     XRPUSDT: OVERBOUGHT   conf=60% RSI=77.0 $1.4198
+[09:32:55]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.1 $113.63
+[09:32:55] Sleep 300s...
+
+[09:37:55]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:37:55]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.5 $2622.43
+[09:37:55]     XRPUSDT: OVERBOUGHT   conf=60% RSI=77.7 $1.425
+[09:37:55]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.4 $113.8
+[09:37:55]   📤 Auto-push (cycle 12)...
