@@ -143,10 +143,118 @@
       "size": 19.609894,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-19T14:46:44.987913+00:00",
+      "symbol": "ETHUSDT",
+      "signal": "LONG",
+      "confidence": 82,
+      "price": 2639.29,
+      "rsi": {
+        "15m": 51.7,
+        "1h": 58.6,
+        "4h": 83.1,
+        "6h": 85.4,
+        "12h": 62.4,
+        "1d": 62.3,
+        "3d": 80.4,
+        "1w": 78.6,
+        "1M": 39.8
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.22,
+      "entry": 2639.29,
+      "stop": 2627.765714,
+      "take": 2668.100714,
+      "size": 5.683347,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-19T14:46:55.753579+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 770.38,
+      "rsi": {
+        "15m": 61.0,
+        "1h": 59.9,
+        "4h": 84.1,
+        "6h": 90.1,
+        "12h": 74.2,
+        "1d": 51.1,
+        "3d": 78.0,
+        "1w": 67.8,
+        "1M": 49.5
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.33,
+      "entry": 770.38,
+      "stop": 765.242857,
+      "take": 783.222857,
+      "size": 19.466073,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-19T14:47:00.866686+00:00",
+      "symbol": "LINKUSDT",
+      "signal": "LONG",
+      "confidence": 79,
+      "price": 12.554,
+      "rsi": {
+        "15m": 57.6,
+        "1h": 62.5,
+        "4h": 84.3,
+        "6h": 90.9,
+        "12h": 67.8,
+        "1d": 54.2,
+        "3d": 74.4,
+        "1w": 67.5,
+        "1M": 42.3
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "down"
+      },
+      "atr_pct": 0.42,
+      "entry": 12.554,
+      "stop": 12.448286,
+      "take": 12.818286,
+      "size": 945.945946,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 5,
-  "cycle": 72,
+  "pushes": 6,
+  "cycle": 84,
   "positions": {
     "XRPUSDT": {
       "symbol": "XRPUSDT",
@@ -158,6 +266,28 @@
       "entry_ts": "2026-09-19T08:27:39.945568+00:00",
       "confidence": 78,
       "trail_updates": 7
+    },
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "entry": 2639.29,
+      "stop": 2627.765714,
+      "initial_stop": 2627.765714,
+      "take": 2668.100714,
+      "size": 5.683347,
+      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
+      "confidence": 82,
+      "trail_updates": 0
+    },
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 770.38,
+      "stop": 765.242857,
+      "initial_stop": 765.242857,
+      "take": 783.222857,
+      "size": 19.466073,
+      "entry_ts": "2026-09-19T14:47:05.971953+00:00",
+      "confidence": 86,
+      "trail_updates": 0
     }
   },
   "closed": [
