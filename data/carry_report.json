@@ -1,0 +1,36 @@
+[
+  {
+    "asset": "BTC",
+    "spot_price": 81278.45,
+    "funding": {
+      "gross_funding_pct": 0.561,
+      "costs_pct": 0.008,
+      "net_pct": 0.553,
+      "daily_net_pct": 0.0184,
+      "annualized_net_pct": 6.73
+    },
+    "quarterly": {
+      "gross_pct": -0.21,
+      "costs_annualized_pct": 0.02,
+      "net_pct": -0.23
+    },
+    "ts": "2026-09-19T00:52:37.390602+00:00"
+  },
+  {
+    "asset": "ETH",
+    "spot_price": 2619.12,
+    "funding": {
+      "gross_funding_pct": 0.367,
+      "costs_pct": 0.008,
+      "net_pct": 0.36,
+      "daily_net_pct": 0.012,
+      "annualized_net_pct": 4.38
+    },
+    "quarterly": {
+      "gross_pct": -0.18,
+      "costs_annualized_pct": 0.02,
+      "net_pct": -0.2
+    },
+    "ts": "2026-09-19T00:52:37.979218+00:00"
+  }
+]

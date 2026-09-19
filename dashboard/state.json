@@ -1,0 +1,42 @@
+{
+  "updated": "2026-09-19T00:55:24+00:00",
+  "min_net_ann_pct": 5.0,
+  "assets": {
+    "BTC": {
+      "spot": 81492.0,
+      "funding": {
+        "avg_rate_pct": 0.006233100000000001,
+        "gross_pct": 0.561,
+        "costs_pct": 0.48,
+        "net_pct": 0.081,
+        "net_ann_pct": 0.99
+      },
+      "quarterly": {
+        "gross_ann_pct": 0.01,
+        "costs_ann_pct": 1.54,
+        "net_ann_pct": -1.53
+      },
+      "best_strategy": "funding",
+      "best_net_ann_pct": 0.99,
+      "signal": "WAIT"
+    },
+    "ETH": {
+      "spot": 2624.98,
+      "funding": {
+        "avg_rate_pct": 0.0040807000000000005,
+        "gross_pct": 0.367,
+        "costs_pct": 0.48,
+        "net_pct": -0.113,
+        "net_ann_pct": -1.37
+      },
+      "quarterly": {
+        "gross_ann_pct": -0.11,
+        "costs_ann_pct": 1.54,
+        "net_ann_pct": -1.65
+      },
+      "best_strategy": "funding",
+      "best_net_ann_pct": -1.37,
+      "signal": "WAIT"
+    }
+  }
+}
