@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Final v2</title><style>
+*{box-sizing:border-box}body{font-family:-apple-system,system-ui,sans-serif;background:#0a0e14;color:#c9d1d9;margin:0;padding:20px}
+h1{color:#58a6ff;border-bottom:2px solid #30363d;padding-bottom:10px}
+h2{color:#58a6ff;margin-top:35px}.time{color:#8b949e;font-size:13px;margin-bottom:15px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-size:11px;text-transform:uppercase;background:#161b22}
+th:first-child,td:first-child{text-align:left}
+tr:hover{background:#161b22}.pos{color:#3fb950}.neg{color:#f85149}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;margin:20px 0}
+.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px}
+.card .label{color:#8b949e;font-size:12px;text-transform:uppercase}
+.card .value{font-size:24px;font-weight:700;margin-top:8px}
+.card .sub{color:#8b949e;font-size:13px;margin-top:8px}
+.info{background:#161b22;border-left:3px solid #58a6ff;padding:15px;border-radius:6px;margin:15px 0}
+.info b{color:#58a6ff}
+</style></head><body>
+<h1>Crypto Carry v2 - Final</h1>
+<div class="time">Generated: 2026-09-19 01:36 UTC</div>
+<div class="info">
+<b>A:</b> RR = 3.0 (TP = 6.0xATR, SL = 2.0xATR) |
+<b>B:</b> Only ETHUSDT, XRPUSDT |
+<b>C:</b> Carry as core
+</div>
+<div class="grid">
+  <div class="card"><div class="label">CARRY (core)</div>
+    <div class="value pos">CAGR +15.54%</div>
+    <div class="sub">Sharpe 15.05 | DD +0.00% | 20 symbols</div></div>
+  <div class="card"><div class="label">DIRECTIONAL (A+B)</div>
+    <div class="value neg">$-843.21</div>
+    <div class="sub">2 symbols | RR 3.0</div></div>
+</div>
+<h2>Directional Backtest (RR 3.0)</h2>
+<table><tr><th>Symbol</th><th>Trades</th><th>Win%</th><th>PnL $</th><th>Avg Win</th><th>Avg Loss</th><th>PF</th><th>Stops</th><th>Takes</th></tr>
+<tr><td><b>ETHUSDT</b></td><td>28</td>
+          <td class="pos">32.1%</td>
+          <td class="neg">$-315.79</td>
+          <td class="pos">$+99.71</td>
+          <td class="neg">$-63.85</td>
+          <td class="neg">0.74</td>
+          <td>27</td><td>1</td></tr><tr><td><b>XRPUSDT</b></td><td>25</td>
+          <td class="neg">28.0%</td>
+          <td class="neg">$-527.42</td>
+          <td class="pos">$+98.33</td>
+          <td class="neg">$-67.54</td>
+          <td class="neg">0.57</td>
+          <td>25</td><td>0</td></tr></table>
+<h2>Active Signals</h2>
+<table><tr><th>Symbol</th><th>Entry</th><th>Stop</th><th>Take</th><th>Size</th><th>RSI</th><th>RR</th></tr>
+<tr><td><b>ETHUSDT</b></td><td>$2,623.45</td>
+          <td class="neg">$2,414.5414</td><td class="pos">$3,250.1757</td>
+          <td>0.478678</td><td>62.3</td><td>3.0</td></tr></table>
+</body></html>

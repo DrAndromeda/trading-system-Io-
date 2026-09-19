@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Test Orders</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0e14;color:#c9d1d9;margin:0;padding:20px}
+h1{color:#58a6ff;border-bottom:2px solid #30363d;padding-bottom:10px}
+.time{color:#8b949e;font-size:13px;margin-bottom:15px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-size:11px;text-transform:uppercase;background:#161b22;text-align:right}
+th:first-child,td:first-child{text-align:left}
+tr:hover{background:#161b22}
+.pos{color:#3fb950}.neg{color:#f85149}
+tr.long{border-left:3px solid #3fb950}
+tr.short{border-left:3px solid #f85149}
+td.long{color:#3fb950;font-weight:600}
+td.short{color:#f85149;font-weight:600}
+small{color:#8b949e;font-size:11px;font-weight:400}
+.info{background:#161b22;border-left:3px solid #58a6ff;padding:15px;border-radius:6px;margin:15px 0}
+.info b{color:#58a6ff}
+</style></head><body>
+<h1>Test Orders - Live</h1>
+<div class="time">Generated: 2026-09-19 01:34 UTC</div>
+<div class="info">
+<b>Capital:</b> $10,000.00 &nbsp;|&nbsp;
+<b>Risk per trade:</b> 1.0% = $100.00 &nbsp;|&nbsp;
+<b>R:R target:</b> 2.5 (TP=5xATR, SL=2xATR)
+</div>
+<table>
+<tr>
+  <th>Symbol</th><th>Action</th><th>Entry</th><th>Stop Loss</th><th>Take Profit</th>
+  <th>Size</th><th>Notional</th><th>Risk $</th><th>Reward $</th><th>R:R</th><th>RSI</th>
+</tr>
+<tr class="long">
+          <td><b>BTCUSDT</b></td>
+          <td class="long">LONG</td>
+          <td>$81,523.4200</td>
+          <td class="neg">$77,047.0329 <small>(+5.49%)</small></td>
+          <td class="pos">$92,714.3879 <small>(+13.73%)</small></td>
+          <td>0.022339</td>
+          <td>$1,821.19</td>
+          <td class="neg">-$100.00</td>
+          <td class="pos">+$250.00</td>
+          <td><b>2.50</b></td>
+          <td>56.2</td>
+        </tr><tr class="long">
+          <td><b>ETHUSDT</b></td>
+          <td class="long">LONG</td>
+          <td>$2,623.4500</td>
+          <td class="neg">$2,414.5414 <small>(+7.96%)</small></td>
+          <td class="pos">$3,145.7214 <small>(+19.91%)</small></td>
+          <td>0.478678</td>
+          <td>$1,255.79</td>
+          <td class="neg">-$100.00</td>
+          <td class="pos">+$250.00</td>
+          <td><b>2.50</b></td>
+          <td>62.3</td>
+        </tr><tr class="long">
+          <td><b>SOLUSDT</b></td>
+          <td class="long">LONG</td>
+          <td>$113.5900</td>
+          <td class="neg">$103.8286 <small>(+8.59%)</small></td>
+          <td class="pos">$137.9936 <small>(+21.48%)</small></td>
+          <td>10.244402</td>
+          <td>$1,163.66</td>
+          <td class="neg">-$100.00</td>
+          <td class="pos">+$250.00</td>
+          <td><b>2.50</b></td>
+          <td>64.0</td>
+        </tr>
+</table>
+</body></html>

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Order Simulator</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0a0e14;color:#c9d1d9;margin:0;padding:20px}
+h1{color:#58a6ff;border-bottom:2px solid #30363d;padding-bottom:10px}
+h2{color:#58a6ff;margin-top:35px}
+.time{color:#8b949e;font-size:13px;margin-bottom:15px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid #21262d}
+th{color:#8b949e;font-size:10px;text-transform:uppercase;background:#161b22}
+th:first-child,td:first-child{text-align:left}
+tr:hover{background:#161b22}
+.pos{color:#3fb950}.neg{color:#f85149}
+.info{background:#161b22;border-left:3px solid #58a6ff;padding:15px;border-radius:6px;margin:15px 0}
+.info b{color:#58a6ff}
+.chart{background:#161b22;border-radius:8px;padding:10px;margin:15px 0;text-align:center}
+.chart img{max-width:100%;border-radius:6px}
+</style></head><body>
+<h1>Order Simulator - Real History</h1>
+<div class="time">Generated: 2026-09-19 01:35 UTC</div>
+<div class="info">
+<b>Config:</b> Capital $10,000 | Risk 1.0% | R:R 2.5 | SL=2.0xATR | TP=5.0xATR<br>
+<b>Logic:</b> LONG if EMA20>EMA50 AND RSI 50-75 | Entry next open | Intra-bar SL/TP
+</div>
+<h2>Per-Symbol Summary</h2>
+<table>
+<tr><th>Symbol</th><th>Trades</th><th>Win%</th><th>PnL $</th><th>Avg Win</th><th>Avg Loss</th><th>PF</th><th>Stops</th><th>Takes</th><th>Avg Bars</th></tr>
+<tr>
+          <td><b>BTCUSDT</b></td>
+          <td>16</td>
+          <td class="neg">25.0%</td>
+          <td class="neg">$-256.74</td>
+          <td class="pos">$+246.51</td>
+          <td class="neg">$-103.57</td>
+          <td class="neg">0.79</td>
+          <td>12</td>
+          <td>4</td>
+          <td>20.7</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>15</td>
+          <td class="neg">33.3%</td>
+          <td class="pos">$+217.27</td>
+          <td class="pos">$+247.49</td>
+          <td class="neg">$-102.02</td>
+          <td class="pos">1.21</td>
+          <td>10</td>
+          <td>5</td>
+          <td>17.5</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>9</td>
+          <td class="neg">33.3%</td>
+          <td class="pos">$+133.00</td>
+          <td class="pos">$+248.22</td>
+          <td class="neg">$-101.94</td>
+          <td class="pos">1.22</td>
+          <td>6</td>
+          <td>3</td>
+          <td>39.3</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>18</td>
+          <td class="neg">27.8%</td>
+          <td class="neg">$-85.02</td>
+          <td class="pos">$+247.79</td>
+          <td class="neg">$-101.84</td>
+          <td class="neg">0.94</td>
+          <td>13</td>
+          <td>5</td>
+          <td>12.2</td>
+        </tr>
+</table>
+<h2>All Trades</h2>
+<table>
+<tr><th>Symbol</th><th>Entry Date</th><th>Exit Date</th><th>Side</th><th>Entry</th><th>Stop</th><th>Take</th><th>Exit</th><th>Reason</th><th>PnL%</th><th>PnL $</th><th>Bars</th></tr>
+<tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2024-07-29</td>
+          <td>2024-08-01</td>
+          <td>LONG</td>
+          <td>$67,645.0000</td>
+          <td class="neg">$62,905.0557</td>
+          <td class="pos">$79,494.8607</td>
+          <td>$62,905.0557</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-7.01%</td>
+          <td class="neg">$-102.75</td>
+          <td>4</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2024-09-24</td>
+          <td>2024-10-11</td>
+          <td>LONG</td>
+          <td>$63,617.9900</td>
+          <td class="neg">$59,234.8100</td>
+          <td class="pos">$74,575.9400</td>
+          <td>$59,234.8100</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-6.89%</td>
+          <td class="neg">$-102.80</td>
+          <td>18</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2024-10-15</td>
+          <td>2024-11-07</td>
+          <td>LONG</td>
+          <td>$65,870.0000</td>
+          <td class="neg">$61,718.2329</td>
+          <td class="pos">$76,249.4179</td>
+          <td>$76,249.4179</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+15.76%</td>
+          <td class="pos">$+246.58</td>
+          <td>24</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2024-11-08</td>
+          <td>2024-11-12</td>
+          <td>LONG</td>
+          <td>$76,059.6800</td>
+          <td class="neg">$70,877.3129</td>
+          <td class="pos">$89,015.5979</td>
+          <td>$89,015.5979</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+17.03%</td>
+          <td class="pos">$+246.81</td>
+          <td>5</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2024-11-26</td>
+          <td>2025-02-25</td>
+          <td>LONG</td>
+          <td>$96,000.5700</td>
+          <td class="neg">$88,094.3800</td>
+          <td class="pos">$115,766.0450</td>
+          <td>$88,094.3800</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-8.24%</td>
+          <td class="neg">$-102.33</td>
+          <td>92</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-05-06</td>
+          <td>2025-05-19</td>
+          <td>LONG</td>
+          <td>$93,770.3200</td>
+          <td class="neg">$88,536.7200</td>
+          <td class="pos">$106,854.3200</td>
+          <td>$106,854.3200</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+13.95%</td>
+          <td class="pos">$+246.17</td>
+          <td>14</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-05-24</td>
+          <td>2025-06-06</td>
+          <td>LONG</td>
+          <td>$108,940.0000</td>
+          <td class="neg">$102,595.7843</td>
+          <td class="pos">$124,800.5393</td>
+          <td>$102,595.7843</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-5.82%</td>
+          <td class="neg">$-103.33</td>
+          <td>14</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-06-12</td>
+          <td>2025-06-13</td>
+          <td>LONG</td>
+          <td>$109,735.7000</td>
+          <td class="neg">$104,917.6857</td>
+          <td class="pos">$121,780.7357</td>
+          <td>$104,917.6857</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-4.39%</td>
+          <td class="neg">$-104.46</td>
+          <td>2</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-06-15</td>
+          <td>2025-06-22</td>
+          <td>LONG</td>
+          <td>$104,841.2900</td>
+          <td class="neg">$99,571.8129</td>
+          <td class="pos">$118,014.9829</td>
+          <td>$99,571.8129</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-5.03%</td>
+          <td class="neg">$-103.88</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-06-27</td>
+          <td>2025-08-14</td>
+          <td>LONG</td>
+          <td>$107,313.6100</td>
+          <td class="neg">$100,724.1629</td>
+          <td class="pos">$123,787.2279</td>
+          <td>$123,787.2279</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+15.35%</td>
+          <td class="pos">$+246.49</td>
+          <td>49</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-08-16</td>
+          <td>2025-08-25</td>
+          <td>LONG</td>
+          <td>$117,275.2300</td>
+          <td class="neg">$111,339.8857</td>
+          <td class="pos">$132,113.5907</td>
+          <td>$111,339.8857</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-5.06%</td>
+          <td class="neg">$-103.85</td>
+          <td>10</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-09-17</td>
+          <td>2025-09-24</td>
+          <td>LONG</td>
+          <td>$115,905.8800</td>
+          <td class="neg">$111,463.5143</td>
+          <td class="pos">$127,011.7943</td>
+          <td>$111,463.5143</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-3.83%</td>
+          <td class="neg">$-105.12</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-10-03</td>
+          <td>2025-10-11</td>
+          <td>LONG</td>
+          <td>$119,910.7800</td>
+          <td class="neg">$114,821.4586</td>
+          <td class="pos">$132,634.0836</td>
+          <td>$114,821.4586</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-4.24%</td>
+          <td class="neg">$-104.61</td>
+          <td>9</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2025-10-12</td>
+          <td>2025-11-04</td>
+          <td>LONG</td>
+          <td>$111,793.2100</td>
+          <td class="neg">$103,089.5286</td>
+          <td class="pos">$133,552.4136</td>
+          <td>$103,089.5286</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-7.79%</td>
+          <td class="neg">$-102.47</td>
+          <td>24</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2026-01-18</td>
+          <td>2026-01-20</td>
+          <td>LONG</td>
+          <td>$95,573.6500</td>
+          <td class="neg">$90,970.3414</td>
+          <td class="pos">$107,081.9214</td>
+          <td>$90,970.3414</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-4.82%</td>
+          <td class="neg">$-104.05</td>
+          <td>3</td>
+        </tr><tr>
+          <td><b>BTCUSDT</b></td>
+          <td>2026-04-17</td>
+          <td>2026-06-02</td>
+          <td>LONG</td>
+          <td>$74,697.2000</td>
+          <td class="neg">$70,082.9143</td>
+          <td class="pos">$86,232.9143</td>
+          <td>$70,082.9143</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-6.18%</td>
+          <td class="neg">$-103.14</td>
+          <td>47</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2024-10-22</td>
+          <td>2024-10-24</td>
+          <td>LONG</td>
+          <td>$2,679.4300</td>
+          <td class="neg">$2,491.3386</td>
+          <td class="pos">$3,149.6586</td>
+          <td>$2,491.3386</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-7.02%</td>
+          <td class="neg">$-102.75</td>
+          <td>3</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2024-10-25</td>
+          <td>2024-11-09</td>
+          <td>LONG</td>
+          <td>$2,525.8000</td>
+          <td class="neg">$2,330.2943</td>
+          <td class="pos">$3,014.5643</td>
+          <td>$3,014.5643</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+19.35%</td>
+          <td class="pos">$+247.17</td>
+          <td>16</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2024-11-15</td>
+          <td>2024-12-05</td>
+          <td>LONG</td>
+          <td>$3,077.6800</td>
+          <td class="neg">$2,729.1629</td>
+          <td class="pos">$3,948.9729</td>
+          <td>$3,948.9729</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+28.31%</td>
+          <td class="pos">$+247.98</td>
+          <td>21</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2024-12-06</td>
+          <td>2024-12-20</td>
+          <td>LONG</td>
+          <td>$3,888.0000</td>
+          <td class="neg">$3,478.5686</td>
+          <td class="pos">$4,911.5786</td>
+          <td>$3,478.5686</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-10.53%</td>
+          <td class="neg">$-101.80</td>
+          <td>15</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-01-04</td>
+          <td>2025-01-09</td>
+          <td>LONG</td>
+          <td>$3,565.1400</td>
+          <td class="neg">$3,272.9400</td>
+          <td class="pos">$4,295.6400</td>
+          <td>$3,272.9400</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-8.20%</td>
+          <td class="neg">$-102.34</td>
+          <td>6</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-05-24</td>
+          <td>2025-06-22</td>
+          <td>LONG</td>
+          <td>$2,568.5300</td>
+          <td class="neg">$2,206.1943</td>
+          <td class="pos">$3,474.3693</td>
+          <td>$2,206.1943</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-14.11%</td>
+          <td class="neg">$-101.32</td>
+          <td>30</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-07-04</td>
+          <td>2025-07-16</td>
+          <td>LONG</td>
+          <td>$2,570.5200</td>
+          <td class="neg">$2,306.9086</td>
+          <td class="pos">$3,229.5486</td>
+          <td>$3,229.5486</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+25.64%</td>
+          <td class="pos">$+247.80</td>
+          <td>13</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-07-31</td>
+          <td>2025-08-03</td>
+          <td>LONG</td>
+          <td>$3,797.2500</td>
+          <td class="neg">$3,408.7143</td>
+          <td class="pos">$4,768.5893</td>
+          <td>$3,408.7143</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-10.23%</td>
+          <td class="neg">$-101.85</td>
+          <td>4</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-08-07</td>
+          <td>2025-08-13</td>
+          <td>LONG</td>
+          <td>$3,664.7000</td>
+          <td class="neg">$3,305.7000</td>
+          <td class="pos">$4,562.2000</td>
+          <td>$4,562.2000</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+24.49%</td>
+          <td class="pos">$+247.71</td>
+          <td>7</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-08-15</td>
+          <td>2025-08-20</td>
+          <td>LONG</td>
+          <td>$4,618.8700</td>
+          <td class="neg">$4,167.0600</td>
+          <td class="pos">$5,748.3950</td>
+          <td>$4,167.0600</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-9.78%</td>
+          <td class="neg">$-101.94</td>
+          <td>6</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-08-21</td>
+          <td>2025-10-11</td>
+          <td>LONG</td>
+          <td>$4,255.6800</td>
+          <td class="neg">$3,764.9786</td>
+          <td class="pos">$5,482.4336</td>
+          <td>$3,764.9786</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-11.53%</td>
+          <td class="neg">$-101.63</td>
+          <td>52</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2025-10-13</td>
+          <td>2025-11-04</td>
+          <td>LONG</td>
+          <td>$4,034.5900</td>
+          <td class="neg">$3,494.1271</td>
+          <td class="pos">$5,385.7471</td>
+          <td>$3,494.1271</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-13.40%</td>
+          <td class="neg">$-101.39</td>
+          <td>23</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2026-01-17</td>
+          <td>2026-01-20</td>
+          <td>LONG</td>
+          <td>$3,264.1700</td>
+          <td class="neg">$3,047.1043</td>
+          <td class="pos">$3,806.8343</td>
+          <td>$3,047.1043</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-6.65%</td>
+          <td class="neg">$-102.91</td>
+          <td>4</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2026-04-16</td>
+          <td>2026-05-18</td>
+          <td>LONG</td>
+          <td>$2,332.0300</td>
+          <td class="neg">$2,131.5871</td>
+          <td class="pos">$2,833.1371</td>
+          <td>$2,131.5871</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-8.60%</td>
+          <td class="neg">$-102.23</td>
+          <td>33</td>
+        </tr><tr>
+          <td><b>ETHUSDT</b></td>
+          <td>2026-07-23</td>
+          <td>2026-08-20</td>
+          <td>LONG</td>
+          <td>$1,943.0400</td>
+          <td class="neg">$1,812.4914</td>
+          <td class="pos">$2,269.4114</td>
+          <td>$2,269.4114</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+16.80%</td>
+          <td class="pos">$+246.77</td>
+          <td>29</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2024-07-17</td>
+          <td>2024-08-05</td>
+          <td>LONG</td>
+          <td>$0.5846</td>
+          <td class="neg">$0.5109</td>
+          <td class="pos">$0.7689</td>
+          <td>$0.5109</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-12.61%</td>
+          <td class="neg">$-101.49</td>
+          <td>20</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2024-08-18</td>
+          <td>2024-11-15</td>
+          <td>LONG</td>
+          <td>$0.5668</td>
+          <td class="neg">$0.4759</td>
+          <td class="pos">$0.7939</td>
+          <td>$0.7939</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+40.07%</td>
+          <td class="pos">$+248.50</td>
+          <td>90</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2024-11-25</td>
+          <td>2024-12-02</td>
+          <td>LONG</td>
+          <td>$1.3078</td>
+          <td class="neg">$0.9425</td>
+          <td class="pos">$2.2210</td>
+          <td>$2.2210</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+69.83%</td>
+          <td class="pos">$+249.03</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2024-12-06</td>
+          <td>2025-04-07</td>
+          <td>LONG</td>
+          <td>$2.3750</td>
+          <td class="neg">$1.7337</td>
+          <td class="pos">$3.9784</td>
+          <td>$1.7337</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-27.00%</td>
+          <td class="neg">$-100.64</td>
+          <td>123</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2025-05-12</td>
+          <td>2025-05-31</td>
+          <td>LONG</td>
+          <td>$2.3473</td>
+          <td class="neg">$2.1274</td>
+          <td class="pos">$2.8970</td>
+          <td>$2.1274</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-9.37%</td>
+          <td class="neg">$-102.04</td>
+          <td>20</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2025-07-10</td>
+          <td>2025-07-11</td>
+          <td>LONG</td>
+          <td>$2.3818</td>
+          <td class="neg">$2.2007</td>
+          <td class="pos">$2.8344</td>
+          <td>$2.8344</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+19.00%</td>
+          <td class="pos">$+247.12</td>
+          <td>2</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2025-07-25</td>
+          <td>2025-10-11</td>
+          <td>LONG</td>
+          <td>$3.2261</td>
+          <td class="neg">$2.6812</td>
+          <td class="pos">$4.5884</td>
+          <td>$2.6812</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-16.89%</td>
+          <td class="neg">$-101.08</td>
+          <td>79</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2026-05-12</td>
+          <td>2026-05-16</td>
+          <td>LONG</td>
+          <td>$1.4849</td>
+          <td class="neg">$1.4085</td>
+          <td class="pos">$1.6760</td>
+          <td>$1.4085</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-5.15%</td>
+          <td class="neg">$-103.78</td>
+          <td>5</td>
+        </tr><tr>
+          <td><b>XRPUSDT</b></td>
+          <td>2026-05-17</td>
+          <td>2026-05-23</td>
+          <td>LONG</td>
+          <td>$1.4147</td>
+          <td class="neg">$1.3107</td>
+          <td class="pos">$1.6746</td>
+          <td>$1.3107</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-7.35%</td>
+          <td class="neg">$-102.62</td>
+          <td>7</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2024-07-31</td>
+          <td>2024-08-02</td>
+          <td>LONG</td>
+          <td>$181.0000</td>
+          <td class="neg">$159.4029</td>
+          <td class="pos">$234.9929</td>
+          <td>$159.4029</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-11.93%</td>
+          <td class="neg">$-101.58</td>
+          <td>3</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2024-09-28</td>
+          <td>2024-10-02</td>
+          <td>LONG</td>
+          <td>$159.0300</td>
+          <td class="neg">$143.2386</td>
+          <td class="pos">$198.5086</td>
+          <td>$143.2386</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-9.93%</td>
+          <td class="neg">$-101.91</td>
+          <td>5</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2024-10-03</td>
+          <td>2024-11-07</td>
+          <td>LONG</td>
+          <td>$147.4600</td>
+          <td class="neg">$130.6943</td>
+          <td class="pos">$189.3743</td>
+          <td>$189.3743</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+28.42%</td>
+          <td class="pos">$+247.99</td>
+          <td>36</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2024-11-08</td>
+          <td>2024-11-18</td>
+          <td>LONG</td>
+          <td>$192.6500</td>
+          <td class="neg">$171.9871</td>
+          <td class="pos">$244.3071</td>
+          <td>$244.3071</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+26.81%</td>
+          <td class="pos">$+247.89</td>
+          <td>11</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2024-11-25</td>
+          <td>2024-12-10</td>
+          <td>LONG</td>
+          <td>$244.1800</td>
+          <td class="neg">$208.7343</td>
+          <td class="pos">$332.7943</td>
+          <td>$208.7343</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-14.52%</td>
+          <td class="neg">$-101.28</td>
+          <td>16</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-01-19</td>
+          <td>2025-01-27</td>
+          <td>LONG</td>
+          <td>$257.7500</td>
+          <td class="neg">$226.0971</td>
+          <td class="pos">$336.8821</td>
+          <td>$226.0971</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-12.28%</td>
+          <td class="neg">$-101.53</td>
+          <td>9</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-01-28</td>
+          <td>2025-02-03</td>
+          <td>LONG</td>
+          <td>$233.6700</td>
+          <td class="neg">$179.1657</td>
+          <td class="pos">$369.9307</td>
+          <td>$179.1657</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-23.33%</td>
+          <td class="neg">$-100.76</td>
+          <td>7</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-04-30</td>
+          <td>2025-05-23</td>
+          <td>LONG</td>
+          <td>$148.0100</td>
+          <td class="neg">$132.9800</td>
+          <td class="pos">$185.5850</td>
+          <td>$185.5850</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+25.39%</td>
+          <td class="pos">$+247.78</td>
+          <td>24</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-05-24</td>
+          <td>2025-05-31</td>
+          <td>LONG</td>
+          <td>$180.6700</td>
+          <td class="neg">$158.3800</td>
+          <td class="pos">$236.3950</td>
+          <td>$158.3800</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-12.34%</td>
+          <td class="neg">$-101.52</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-07-14</td>
+          <td>2025-07-21</td>
+          <td>LONG</td>
+          <td>$162.0400</td>
+          <td class="neg">$147.7157</td>
+          <td class="pos">$197.8507</td>
+          <td>$197.8507</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+22.10%</td>
+          <td class="pos">$+247.49</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-07-25</td>
+          <td>2025-08-01</td>
+          <td>LONG</td>
+          <td>$188.5400</td>
+          <td class="neg">$166.4071</td>
+          <td class="pos">$243.8721</td>
+          <td>$166.4071</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-11.74%</td>
+          <td class="neg">$-101.60</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-08-13</td>
+          <td>2025-09-11</td>
+          <td>LONG</td>
+          <td>$181.7000</td>
+          <td class="neg">$163.2971</td>
+          <td class="pos">$227.7071</td>
+          <td>$227.7071</td>
+          <td class="pos"><b>TAKE</b></td>
+          <td class="pos">+25.32%</td>
+          <td class="pos">$+247.78</td>
+          <td>30</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-09-12</td>
+          <td>2025-09-24</td>
+          <td>LONG</td>
+          <td>$226.8200</td>
+          <td class="neg">$206.9014</td>
+          <td class="pos">$276.6164</td>
+          <td>$206.9014</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-8.78%</td>
+          <td class="neg">$-102.18</td>
+          <td>13</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-10-07</td>
+          <td>2025-10-10</td>
+          <td>LONG</td>
+          <td>$235.6400</td>
+          <td class="neg">$212.2571</td>
+          <td class="pos">$294.0971</td>
+          <td>$212.2571</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-9.92%</td>
+          <td class="neg">$-101.92</td>
+          <td>4</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2025-10-11</td>
+          <td>2025-10-12</td>
+          <td>LONG</td>
+          <td>$210.6900</td>
+          <td class="neg">$187.9029</td>
+          <td class="pos">$267.6579</td>
+          <td>$187.9029</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-10.82%</td>
+          <td class="neg">$-101.75</td>
+          <td>2</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2026-05-11</td>
+          <td>2026-05-15</td>
+          <td>LONG</td>
+          <td>$94.5300</td>
+          <td class="neg">$89.1014</td>
+          <td class="pos">$108.1014</td>
+          <td>$89.1014</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-5.74%</td>
+          <td class="neg">$-103.38</td>
+          <td>5</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2026-05-16</td>
+          <td>2026-05-23</td>
+          <td>LONG</td>
+          <td>$89.0400</td>
+          <td class="neg">$82.3171</td>
+          <td class="pos">$105.8471</td>
+          <td>$82.3171</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-7.55%</td>
+          <td class="neg">$-102.55</td>
+          <td>8</td>
+        </tr><tr>
+          <td><b>SOLUSDT</b></td>
+          <td>2026-07-11</td>
+          <td>2026-08-02</td>
+          <td>LONG</td>
+          <td>$78.1500</td>
+          <td class="neg">$70.6857</td>
+          <td class="pos">$96.8107</td>
+          <td>$70.6857</td>
+          <td class="neg"><b>STOP</b></td>
+          <td class="neg">-9.55%</td>
+          <td class="neg">$-101.99</td>
+          <td>23</td>
+        </tr>
+</table>
+</body></html>
