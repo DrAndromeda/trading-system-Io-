@@ -539,10 +539,9 @@ def one_cycle(ex, state):
             if sig["signal"] == "LONG":
                 with SIGNALS_LOG.open("a") as f:
                     f.write(json.dumps({k:v for k,v in sig.items() if k!="charts"}) + "\n")
-                recent = [s for s in state["signals"]
-                          if s["symbol"]==sym and
-                          (datetime.fromisoformat(sig["ts"]) - datetime.fromisoformat(s["ts"])).total_seconds() < 21600]
-                if not recent:
+                # Открываем если позиции по этому символу НЕТ прямо сейчас
+                already_open = sym in state.get("positions", {})
+                if not already_open:
                     state["signals"].append({k:v for k,v in sig.items() if k!="charts"})
                     new_confirmed.append(sig)
         except Exception as e:
