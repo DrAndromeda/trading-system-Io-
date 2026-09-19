@@ -107,32 +107,68 @@
       "size": 5315.110099,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-19T08:44:39.603729+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 82,
+      "price": 764.92,
+      "rsi": {
+        "15m": 62.6,
+        "1h": 50.8,
+        "4h": 81.2,
+        "6h": 89.8,
+        "12h": 65.3,
+        "1d": 49.5,
+        "3d": 77.6,
+        "1w": 67.4,
+        "1M": 49.3
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.28,
+      "entry": 764.92,
+      "stop": 760.651429,
+      "take": 775.591429,
+      "size": 19.609894,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 0,
-  "cycle": 12,
+  "pushes": 1,
+  "cycle": 24,
   "positions": {
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2628.87,
-      "stop": 2632.557143,
+      "stop": 2640.717143,
       "initial_stop": 2614.347143,
       "take": 2665.177143,
       "size": 5.705874,
       "entry_ts": "2026-09-19T07:55:34.462385+00:00",
       "confidence": 82,
-      "trail_updates": 1
+      "trail_updates": 3
     },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.309,
-      "stop": 12.312143,
+      "stop": 12.344143,
       "initial_stop": 12.200143,
       "take": 12.581143,
       "size": 918.635171,
       "entry_ts": "2026-09-19T08:01:01.986450+00:00",
       "confidence": 79,
-      "trail_updates": 1
+      "trail_updates": 4
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
