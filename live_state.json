@@ -1,6 +1,57 @@
 {
-  "signals": [],
-  "pushes": 4,
-  "cycle": 60,
-  "started": "2026-09-19T01:46:18.524111+00:00"
+  "signals": [
+    {
+      "ts": "2026-09-19T07:51:27.016222+00:00",
+      "symbol": "ETHUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 2623.46,
+      "rsi": {
+        "15m": 48.1,
+        "1h": 57.6,
+        "4h": 83.8,
+        "6h": 84.3,
+        "12h": 59.8,
+        "1d": 61.5,
+        "3d": 80.1,
+        "1w": 78.4,
+        "1M": 39.6
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.27,
+      "entry": 2623.46,
+      "stop": 2609.482857,
+      "take": 2658.402857,
+      "size": 5.71764,
+      "rr": 2.5,
+      "funding_ann": 0
+    }
+  ],
+  "pushes": 0,
+  "cycle": 1,
+  "positions": {
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "entry": 2623.46,
+      "stop": 2609.482857,
+      "initial_stop": 2609.482857,
+      "take": 2658.402857,
+      "size": 5.71764,
+      "entry_ts": "2026-09-19T07:51:52.039057+00:00",
+      "confidence": 86,
+      "trail_updates": 0
+    }
+  },
+  "closed": [],
+  "started": "2026-09-19T07:51:20.465430+00:00"
 }
