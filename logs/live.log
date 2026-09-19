@@ -66,3 +66,77 @@
 [09:37:55]     XRPUSDT: OVERBOUGHT   conf=60% RSI=77.7 $1.425
 [09:37:55]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.4 $113.8
 [09:37:55]   📤 Auto-push (cycle 12)...
+[09:37:57] ✅ pushed to GitHub
+[09:37:57] Sleep 300s...
+
+[09:42:57]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:42:58]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.2 $2619.51
+[09:42:58]     XRPUSDT: OVERBOUGHT   conf=60% RSI=77.5 $1.4233
+[09:42:58]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.1 $113.63
+[09:42:58] Sleep 300s...
+
+[09:47:58]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:47:58]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.2 $2619.83
+[09:47:58]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.9 $1.4187
+[09:47:58]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.0 $113.55
+[09:47:58] Sleep 300s...
+
+[09:52:59]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:52:59]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.3 $2620.87
+[09:52:59]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.3 $1.4144
+[09:52:59]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.2 $113.7
+[09:52:59] Sleep 300s...
+
+[09:57:59]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[09:57:59]     ETHUSDT: OVERBOUGHT   conf=45% RSI=80.3 $2620.93
+[09:57:59]     XRPUSDT: OVERBOUGHT   conf=60% RSI=76.2 $1.4139
+[09:58:00]     SOLUSDT: OVERBOUGHT   conf=60% RSI=82.1 $113.58
+[09:58:00] Sleep 300s...
+
+[10:03:00]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:03:00]     ETHUSDT: WAIT         conf=45% RSI=73.8 $2624.5
+[10:03:00]     XRPUSDT: WAIT         conf=60% RSI=70.0 $1.4156
+[10:03:00]     SOLUSDT: OVERBOUGHT   conf=45% RSI=76.9 $113.62
+[10:03:00] Sleep 300s...
+
+[10:08:00]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:08:00]     ETHUSDT: WAIT         conf=45% RSI=74.3 $2627.28
+[10:08:01]     XRPUSDT: WAIT         conf=60% RSI=69.8 $1.4146
+[10:08:01]     SOLUSDT: OVERBOUGHT   conf=45% RSI=77.2 $113.75
+[10:08:01] Sleep 300s...
+
+[10:13:01]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:13:02]     ETHUSDT: WAIT         conf=45% RSI=73.8 $2624.71
+[10:13:02]     XRPUSDT: WAIT         conf=60% RSI=69.9 $1.4152
+[10:13:02]     SOLUSDT: OVERBOUGHT   conf=45% RSI=76.8 $113.61
+[10:13:02] Sleep 300s...
+
+[10:18:02]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:18:02]     ETHUSDT: WAIT         conf=45% RSI=73.4 $2622.96
+[10:18:03]     XRPUSDT: WAIT         conf=60% RSI=68.6 $1.4116
+[10:18:03]     SOLUSDT: OVERBOUGHT   conf=45% RSI=75.5 $113.45
+[10:18:03] Sleep 300s...
+
+[10:23:03]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:23:03]     ETHUSDT: WAIT         conf=45% RSI=73.9 $2625.35
+[10:23:03]     XRPUSDT: WAIT         conf=60% RSI=69.3 $1.4129
+[10:23:03]     SOLUSDT: OVERBOUGHT   conf=45% RSI=75.5 $113.44
+[10:23:03] Sleep 300s...
+
+[10:28:03]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:28:03]     ETHUSDT: WAIT         conf=45% RSI=73.1 $2622.45
+[10:28:04]     XRPUSDT: WAIT         conf=45% RSI=68.2 $1.4108
+[10:28:04]     SOLUSDT: WAIT         conf=45% RSI=74.4 $113.3
+[10:28:04] Sleep 300s...
+
+[10:33:04]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:33:04]     ETHUSDT: WAIT         conf=45% RSI=72.7 $2621.54
+[10:33:04]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=67.7 $1.4097
+[10:33:04]     SOLUSDT: WAIT         conf=45% RSI=73.9 $113.24
+[10:33:04] Sleep 300s...
+
+[10:38:04]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:38:05]     ETHUSDT: WAIT         conf=45% RSI=72.1 $2620.4
+[10:38:05]     XRPUSDT: WAIT         conf=45% RSI=68.5 $1.4114
+[10:38:05]     SOLUSDT: WAIT         conf=45% RSI=74.2 $113.28
+[10:38:05]   📤 Auto-push (cycle 24)...
