@@ -140,3 +140,77 @@
 [10:38:05]     XRPUSDT: WAIT         conf=45% RSI=68.5 $1.4114
 [10:38:05]     SOLUSDT: WAIT         conf=45% RSI=74.2 $113.28
 [10:38:05]   📤 Auto-push (cycle 24)...
+[10:38:07] ✅ pushed to GitHub
+[10:38:07] Sleep 300s...
+
+[10:43:07]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:43:08]     ETHUSDT: WAIT         conf=45% RSI=72.5 $2621.25
+[10:43:08]     XRPUSDT: WAIT         conf=60% RSI=69.4 $1.4132
+[10:43:08]     SOLUSDT: OVERBOUGHT   conf=45% RSI=75.3 $113.42
+[10:43:08] Sleep 300s...
+
+[10:48:08]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:48:08]     ETHUSDT: WAIT         conf=45% RSI=72.6 $2621.36
+[10:48:08]     XRPUSDT: WAIT         conf=60% RSI=69.6 $1.4139
+[10:48:09]     SOLUSDT: WAIT         conf=45% RSI=74.8 $113.36
+[10:48:09] Sleep 300s...
+
+[10:53:09]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:53:09]     ETHUSDT: WAIT         conf=45% RSI=72.5 $2621.12
+[10:53:09]     XRPUSDT: WAIT         conf=60% RSI=70.1 $1.4161
+[10:53:09]     SOLUSDT: WAIT         conf=45% RSI=74.4 $113.3
+[10:53:09] Sleep 300s...
+
+[10:58:09]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[10:58:09]     ETHUSDT: WAIT         conf=45% RSI=72.1 $2620.36
+[10:58:09]     XRPUSDT: WAIT         conf=60% RSI=70.8 $1.419
+[10:58:10]     SOLUSDT: WAIT         conf=45% RSI=74.4 $113.3
+[10:58:10] Sleep 300s...
+
+[11:03:10]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:03:10]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=65.6 $2620.45
+[11:03:10]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=59.7 $1.4198
+[11:03:10]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=66.5 $113.27
+[11:03:10] Sleep 300s...
+
+[11:08:10]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:08:10]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=66.6 $2623.96
+[11:08:10]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=60.9 $1.423
+[11:08:11]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=66.8 $113.35
+[11:08:11] Sleep 300s...
+
+[11:13:11]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:13:11]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=66.9 $2625.17
+[11:13:11]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=62.3 $1.4268
+[11:13:11]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=67.1 $113.41
+[11:13:11] Sleep 300s...
+
+[11:18:11]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:18:12]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=66.6 $2624.0
+[11:18:12]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=59.7 $1.4198
+[11:18:12]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=66.7 $113.32
+[11:18:12] Sleep 300s...
+
+[11:23:12]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:23:12]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=66.2 $2622.41
+[11:23:12]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=58.7 $1.4175
+[11:23:13]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=65.2 $113.11
+[11:23:13] Sleep 300s...
+
+[11:28:13]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:28:13]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=66.4 $2623.32
+[11:28:13]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=57.6 $1.4157
+[11:28:13]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=64.9 $113.08
+[11:28:13] Sleep 300s...
+
+[11:33:13]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:33:13]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=65.4 $2620.0
+[11:33:13]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=55.3 $1.4115
+[11:33:14]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=61.3 $112.62
+[11:33:14] Sleep 300s...
+
+[11:38:14]   BTCUSDT ERROR: binance GET https://api.binance.com/api/v3/klines?interval=1h&limit=200&symbol=BTCUSDT
+[11:38:14]   ⚠️ ETHUSDT: WEAK_LONG    conf=65% RSI=62.9 $2615.0
+[11:38:14]   ⚠️ XRPUSDT: WEAK_LONG    conf=65% RSI=55.7 $1.4121
+[11:38:14]   ⚠️ SOLUSDT: WEAK_LONG    conf=65% RSI=58.7 $112.26
+[11:38:14]   📤 Auto-push (cycle 36)...
