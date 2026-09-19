@@ -145,30 +145,19 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 1,
-  "cycle": 24,
+  "pushes": 2,
+  "cycle": 36,
   "positions": {
-    "ETHUSDT": {
-      "symbol": "ETHUSDT",
-      "entry": 2628.87,
-      "stop": 2640.717143,
-      "initial_stop": 2614.347143,
-      "take": 2665.177143,
-      "size": 5.705874,
-      "entry_ts": "2026-09-19T07:55:34.462385+00:00",
-      "confidence": 82,
-      "trail_updates": 3
-    },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.309,
-      "stop": 12.344143,
+      "stop": 12.394143,
       "initial_stop": 12.200143,
       "take": 12.581143,
       "size": 918.635171,
       "entry_ts": "2026-09-19T08:01:01.986450+00:00",
       "confidence": 79,
-      "trail_updates": 4
+      "trail_updates": 6
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
@@ -182,6 +171,22 @@
       "trail_updates": 0
     }
   },
-  "closed": [],
+  "closed": [
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2628.87,
+      "stop": 2640.717143,
+      "initial_stop": 2614.347143,
+      "take": 2665.177143,
+      "size": 5.705874,
+      "entry_ts": "2026-09-19T07:55:34.462385+00:00",
+      "confidence": 82,
+      "trail_updates": 3,
+      "exit_ts": "2026-09-19T09:36:15.452954+00:00",
+      "exit_price": 2640.717143,
+      "exit_reason": "STOP",
+      "pnl_pct": 0.45
+    }
+  ],
   "started": "2026-09-19T07:55:07.937683+00:00"
 }
