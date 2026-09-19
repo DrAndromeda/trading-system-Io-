@@ -14,13 +14,13 @@ for p in [DASH, LOGS]: p.mkdir(exist_ok=True)
 STATE = ROOT/"live_state.json"
 SIGNALS_LOG = LOGS/"signals_confirmed.jsonl"
 
-SYMBOLS = ["ETHUSDT", "XRPUSDT", "BNBUSDT", "LINKUSDT", "PAXGUSDT"]
+SYMBOLS = ["BTCUSDT", "ETHUSDT", "XRPUSDT", "BNBUSDT", "LINKUSDT", "SOLUSDT", "PAXGUSDT"]
 TIMEFRAMES = ["15m", "1h", "4h", "6h", "12h", "1d", "3d", "1w", "1M"]
 RR = 2.5
 SL_ATR = 2.0
 CAPITAL = 10000.0
 RISK_PCT = 1.0
-MAX_POSITIONS = 3
+MAX_POSITIONS = 5
 MAX_NOTIONAL_PER_TRADE = 15000
 POLL_SEC = 180
 PUSH_EVERY_N = 12
