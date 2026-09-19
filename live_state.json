@@ -145,8 +145,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 3,
-  "cycle": 48,
+  "pushes": 4,
+  "cycle": 60,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -162,13 +162,13 @@
     "XRPUSDT": {
       "symbol": "XRPUSDT",
       "entry": 1.4164,
-      "stop": 1.417286,
+      "stop": 1.421586,
       "initial_stop": 1.397586,
       "take": 1.463436,
       "size": 5315.110099,
       "entry_ts": "2026-09-19T08:27:39.945568+00:00",
       "confidence": 78,
-      "trail_updates": 1
+      "trail_updates": 5
     }
   },
   "closed": [
