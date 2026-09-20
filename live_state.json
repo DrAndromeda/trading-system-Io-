@@ -395,11 +395,59 @@
       "size": 622.775801,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-20T16:03:45.583927+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 756.5,
+      "rsi": {
+        "15m": 69.1,
+        "1h": 67.2,
+        "4h": 55.7,
+        "6h": 71.7,
+        "12h": 71.3,
+        "1d": 51.1,
+        "3d": 74.6,
+        "1w": 66.7,
+        "1M": 48.9
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.22,
+      "entry": 756.5,
+      "stop": 753.134286,
+      "take": 764.914286,
+      "size": 19.828156,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 36,
-  "cycle": 444,
-  "positions": {},
+  "pushes": 37,
+  "cycle": 456,
+  "positions": {
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 756.5,
+      "stop": 761.114286,
+      "initial_stop": 753.134286,
+      "take": 764.914286,
+      "size": 19.828156,
+      "entry_ts": "2026-09-20T16:04:01.044887+00:00",
+      "confidence": 86,
+      "trail_updates": 4
+    }
+  },
   "closed": [
     {
       "symbol": "ETHUSDT",
