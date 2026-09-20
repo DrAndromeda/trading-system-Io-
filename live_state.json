@@ -613,8 +613,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 42,
-  "cycle": 516,
+  "pushes": 43,
+  "cycle": 528,
   "positions": {
     "ETHUSDT": {
       "symbol": "ETHUSDT",
@@ -630,13 +630,13 @@
     "SOLUSDT": {
       "symbol": "SOLUSDT",
       "entry": 109.64,
-      "stop": 108.504286,
+      "stop": 109.754286,
       "initial_stop": 108.504286,
       "take": 112.479286,
       "size": 88.050314,
       "entry_ts": "2026-09-20T17:29:18.631520+00:00",
       "confidence": 91,
-      "trail_updates": 0
+      "trail_updates": 2
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
