@@ -431,21 +431,104 @@
       "size": 19.828156,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-20T17:28:53.277644+00:00",
+      "symbol": "ETHUSDT",
+      "signal": "LONG",
+      "confidence": 91,
+      "price": 2623.01,
+      "rsi": {
+        "15m": 70.9,
+        "1h": 65.0,
+        "4h": 69.6,
+        "6h": 76.5,
+        "12h": 64.3,
+        "1d": 58.9,
+        "3d": 82.0,
+        "1w": 78.4,
+        "1M": 39.6
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.56,
+      "entry": 2623.01,
+      "stop": 2593.75,
+      "take": 2696.16,
+      "size": 3.417635,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-20T17:29:13.576166+00:00",
+      "symbol": "SOLUSDT",
+      "signal": "LONG",
+      "confidence": 91,
+      "price": 109.64,
+      "rsi": {
+        "15m": 70.8,
+        "1h": 57.1,
+        "4h": 61.4,
+        "6h": 77.2,
+        "12h": 67.2,
+        "1d": 53.6,
+        "3d": 79.7,
+        "1w": 75.6,
+        "1M": 35.0
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.52,
+      "entry": 109.64,
+      "stop": 108.504286,
+      "take": 112.479286,
+      "size": 88.050314,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 37,
-  "cycle": 456,
+  "pushes": 38,
+  "cycle": 468,
   "positions": {
-    "BNBUSDT": {
-      "symbol": "BNBUSDT",
-      "entry": 756.5,
-      "stop": 761.114286,
-      "initial_stop": 753.134286,
-      "take": 764.914286,
-      "size": 19.828156,
-      "entry_ts": "2026-09-20T16:04:01.044887+00:00",
-      "confidence": 86,
-      "trail_updates": 4
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "entry": 2623.01,
+      "stop": 2593.75,
+      "initial_stop": 2593.75,
+      "take": 2696.16,
+      "size": 3.417635,
+      "entry_ts": "2026-09-20T17:29:18.631520+00:00",
+      "confidence": 91,
+      "trail_updates": 0
+    },
+    "SOLUSDT": {
+      "symbol": "SOLUSDT",
+      "entry": 109.64,
+      "stop": 108.504286,
+      "initial_stop": 108.504286,
+      "take": 112.479286,
+      "size": 88.050314,
+      "entry_ts": "2026-09-20T17:29:18.631520+00:00",
+      "confidence": 91,
+      "trail_updates": 0
     }
   },
   "closed": [
@@ -568,6 +651,21 @@
       "exit_price": 2619.43,
       "exit_reason": "STOP",
       "pnl_pct": -0.7
+    },
+    {
+      "symbol": "BNBUSDT",
+      "entry": 756.5,
+      "stop": 761.114286,
+      "initial_stop": 753.134286,
+      "take": 764.914286,
+      "size": 19.828156,
+      "entry_ts": "2026-09-20T16:04:01.044887+00:00",
+      "confidence": 86,
+      "trail_updates": 4,
+      "exit_ts": "2026-09-20T17:29:18.631489+00:00",
+      "exit_price": 761.114286,
+      "exit_reason": "STOP",
+      "pnl_pct": 0.61
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
