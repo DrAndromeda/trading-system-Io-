@@ -397,8 +397,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 17,
-  "cycle": 216,
+  "pushes": 18,
+  "cycle": 228,
   "positions": {
     "ETHUSDT": {
       "symbol": "ETHUSDT",
