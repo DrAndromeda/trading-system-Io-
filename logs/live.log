@@ -4060,3 +4060,112 @@
 [17:43:41]     LINKUSDT: WAIT         conf=63% RSI=47.8/23.9/55.7/37.8
 [17:43:46]     SOLUSDT: WAIT         conf=63% RSI=36.4/29.1/60.0/51.7
 [17:43:51]     PAXGUSDT: WAIT         conf=54% RSI=47.6/40.4/52.7/42.7
+[17:43:55] ✅ pushed
+[17:43:55] Sleep 180s...
+
+[17:47:00]     BTCUSDT: WAIT         conf=70% RSI=47.1/30.4/73.4/50.0
+[17:47:05]     ETHUSDT: WAIT         conf=70% RSI=46.5/22.6/67.1/54.5
+[17:47:10]     XRPUSDT: WAIT         conf=49% RSI=39.9/25.0/61.4/46.0
+[17:47:15]     BNBUSDT: WAIT         conf=64% RSI=45.4/31.9/48.1/48.9
+[17:47:20]     LINKUSDT: WAIT         conf=63% RSI=47.3/23.9/55.7/37.8
+[17:47:25]     SOLUSDT: WAIT         conf=63% RSI=36.7/29.2/60.0/51.8
+[17:47:30]     PAXGUSDT: WAIT         conf=49% RSI=45.9/39.8/52.6/42.7
+[17:47:30] Sleep 180s...
+
+[17:50:35]     BTCUSDT: WAIT         conf=70% RSI=47.6/30.6/73.5/50.0
+[17:50:41]     ETHUSDT: WAIT         conf=70% RSI=46.4/22.6/67.1/54.5
+[17:50:46]     XRPUSDT: WAIT         conf=49% RSI=39.4/24.9/61.3/45.9
+[17:50:51]     BNBUSDT: WAIT         conf=64% RSI=46.3/32.1/48.3/49.0
+[17:50:56]     LINKUSDT: WAIT         conf=63% RSI=48.7/24.2/56.0/37.9
+[17:51:01]     SOLUSDT: WAIT         conf=63% RSI=37.8/29.4/60.2/51.8
+[17:51:06]     PAXGUSDT: WAIT         conf=49% RSI=45.9/39.8/52.6/42.7
+[17:51:06] Sleep 180s...
+
+[17:54:11]     BTCUSDT: WAIT         conf=70% RSI=49.8/31.1/73.6/50.2
+[17:54:16]     ETHUSDT: WAIT         conf=70% RSI=48.9/23.0/67.5/54.7
+[17:54:21]     XRPUSDT: WAIT         conf=49% RSI=42.4/25.4/61.8/46.1
+[17:54:27]     BNBUSDT: WAIT         conf=64% RSI=48.8/32.7/48.9/49.1
+[17:54:32]     LINKUSDT: WAIT         conf=63% RSI=51.2/24.9/56.4/38.0
+[17:54:37]     SOLUSDT: WAIT         conf=63% RSI=40.2/29.6/60.3/51.9
+[17:54:42]     PAXGUSDT: WAIT         conf=49% RSI=47.3/40.4/52.7/42.7
+[17:54:42] Sleep 180s...
+
+[18:13:46]     BTCUSDT: WAIT         conf=75% RSI=51.6/32.4/73.5/50.1
+[18:13:51]     ETHUSDT: WAIT         conf=75% RSI=45.7/24.1/66.5/54.3
+[18:13:57]     XRPUSDT: WAIT         conf=49% RSI=42.0/30.2/61.0/45.8
+[18:14:02]     BNBUSDT: WAIT         conf=61% RSI=52.6/35.1/48.6/49.0
+[18:14:07]     LINKUSDT: WAIT         conf=68% RSI=52.4/29.5/56.2/38.0
+[18:14:12]     SOLUSDT: WAIT         conf=68% RSI=38.6/32.0/60.0/51.7
+[18:14:18]     PAXGUSDT: WAIT         conf=43% RSI=43.0/33.0/52.3/42.6
+[18:14:18] Sleep 180s...
+
+[18:47:34]     BTCUSDT: WAIT         conf=70% RSI=55.2/35.4/73.9/50.4
+[18:47:40]     ETHUSDT: WAIT         conf=70% RSI=47.3/27.0/67.5/54.7
+[19:02:47]     XRPUSDT: WAIT         conf=56% RSI=48.8/26.8/60.9/46.0
+[19:02:52]     BNBUSDT: WAIT         conf=56% RSI=60.0/36.5/49.1/49.7
+[19:02:57]     LINKUSDT: WAIT         conf=68% RSI=65.1/29.3/55.5/38.3
+[19:03:02]     SOLUSDT: WAIT         conf=70% RSI=59.6/33.8/58.0/52.0
+[19:03:07]     PAXGUSDT: WAIT         conf=45% RSI=46.0/28.4/30.3/42.6
+[19:03:07] Sleep 180s...
+
+[19:21:14]     BTCUSDT: WAIT         conf=70% RSI=60.0/30.2/71.4/50.2
+[19:21:19]     ETHUSDT: WAIT         conf=70% RSI=52.6/26.6/66.2/54.8
+[19:21:25]     XRPUSDT: WAIT         conf=62% RSI=52.7/27.3/61.4/46.1
+[19:21:30]     BNBUSDT: WAIT         conf=56% RSI=63.6/37.4/49.7/49.9
+[19:21:35]     LINKUSDT: WAIT         conf=63% RSI=67.0/30.1/56.2/38.5
+[19:21:40]     SOLUSDT: WAIT         conf=70% RSI=55.0/33.6/57.8/52.0
+[19:21:45]     PAXGUSDT: WAIT         conf=38% RSI=44.0/28.2/30.2/42.6
+[19:21:45] Sleep 180s...
+
+[19:24:50]     BTCUSDT: WAIT         conf=70% RSI=57.7/29.7/71.0/50.2
+[19:24:55]     ETHUSDT: WAIT         conf=70% RSI=50.2/26.2/65.8/54.6
+[19:25:00]     XRPUSDT: WAIT         conf=56% RSI=50.5/26.9/61.0/46.0
+[19:25:06]     BNBUSDT: WAIT         conf=56% RSI=59.5/36.3/49.0/49.7
+[19:25:11]     LINKUSDT: WAIT         conf=63% RSI=64.0/29.5/55.7/38.3
+[19:25:16]     SOLUSDT: WAIT         conf=70% RSI=55.8/33.8/57.9/52.0
+[19:25:21]     PAXGUSDT: WAIT         conf=38% RSI=44.0/28.2/30.2/42.6
+[19:25:21] Sleep 180s...
+
+[19:28:26]     BTCUSDT: WAIT         conf=70% RSI=57.7/29.7/71.0/50.2
+[19:28:31]     ETHUSDT: WAIT         conf=70% RSI=50.5/26.2/65.8/54.6
+[19:28:36]     XRPUSDT: WAIT         conf=56% RSI=49.5/26.6/60.7/45.9
+[19:28:41]     BNBUSDT: WAIT         conf=56% RSI=58.9/36.2/48.9/49.6
+[19:28:47]     LINKUSDT: WAIT         conf=68% RSI=62.3/29.2/55.4/38.3
+[19:28:52]     SOLUSDT: WAIT         conf=70% RSI=52.9/33.2/57.5/51.9
+[19:28:57]     PAXGUSDT: WAIT         conf=38% RSI=44.0/28.2/30.2/42.6
+[19:28:57] Sleep 180s...
+
+[19:32:02]     BTCUSDT: WAIT         conf=70% RSI=54.7/29.2/70.5/50.0
+[19:32:07]     ETHUSDT: WAIT         conf=63% RSI=45.0/25.6/65.1/54.4
+[19:32:12]     XRPUSDT: WAIT         conf=49% RSI=43.9/26.1/60.3/45.8
+[19:32:17]     BNBUSDT: WAIT         conf=56% RSI=55.0/35.8/48.6/49.5
+[19:32:22]     LINKUSDT: WAIT         conf=63% RSI=59.8/29.2/55.5/38.3
+[19:32:27]     SOLUSDT: WAIT         conf=70% RSI=50.0/32.9/57.3/51.8
+[19:32:33]     PAXGUSDT: WAIT         conf=38% RSI=37.4/27.4/30.1/42.6
+[19:32:33] Sleep 180s...
+
+[19:35:38]     BTCUSDT: WAIT         conf=70% RSI=55.9/29.4/70.7/50.1
+[19:35:43]     ETHUSDT: WAIT         conf=70% RSI=47.3/26.0/65.6/54.5
+[19:35:48]     XRPUSDT: WAIT         conf=49% RSI=44.0/26.2/60.4/45.8
+[19:35:53]     BNBUSDT: WAIT         conf=56% RSI=57.5/36.5/49.1/49.7
+[19:35:58]     LINKUSDT: WAIT         conf=63% RSI=62.4/29.9/56.1/38.4
+[19:36:03]     SOLUSDT: WAIT         conf=70% RSI=51.1/33.2/57.5/51.9
+[19:36:08]     PAXGUSDT: WAIT         conf=38% RSI=38.1/27.7/30.1/42.6
+[19:36:08] Sleep 180s...
+
+[19:39:13]     BTCUSDT: WAIT         conf=70% RSI=56.6/29.6/70.9/50.1
+[19:39:18]     ETHUSDT: WAIT         conf=70% RSI=49.0/26.3/65.9/54.7
+[19:39:24]     XRPUSDT: WAIT         conf=56% RSI=45.8/26.5/60.7/45.9
+[19:39:29]     BNBUSDT: WAIT         conf=56% RSI=58.5/36.9/49.4/49.8
+[19:39:34]     LINKUSDT: WAIT         conf=63% RSI=64.6/31.4/56.6/38.6
+[19:39:39]     SOLUSDT: WAIT         conf=70% RSI=53.3/33.6/57.8/52.0
+[19:39:44]     PAXGUSDT: WAIT         conf=38% RSI=39.0/28.0/30.2/42.6
+[19:39:44] Sleep 180s...
+
+[19:42:49]     BTCUSDT: WAIT         conf=70% RSI=54.9/29.2/70.6/50.0
+[19:42:55]     ETHUSDT: WAIT         conf=70% RSI=47.3/26.0/65.6/54.5
+[19:43:00]     XRPUSDT: WAIT         conf=56% RSI=46.2/26.6/60.8/45.9
+[19:43:05]     BNBUSDT: WAIT         conf=56% RSI=57.7/36.6/49.2/49.7
+[19:43:10]     LINKUSDT: WAIT         conf=63% RSI=62.3/29.9/56.0/38.4
+[19:43:15]     SOLUSDT: WAIT         conf=70% RSI=51.6/33.2/57.5/51.9
+[19:43:20]     PAXGUSDT: WAIT         conf=38% RSI=36.7/27.2/30.0/42.6
