@@ -397,21 +397,9 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 19,
-  "cycle": 240,
-  "positions": {
-    "ETHUSDT": {
-      "symbol": "ETHUSDT",
-      "entry": 2637.96,
-      "stop": 2619.43,
-      "initial_stop": 2619.43,
-      "take": 2684.285,
-      "size": 5.396654,
-      "entry_ts": "2026-09-19T18:59:25.800685+00:00",
-      "confidence": 86,
-      "trail_updates": 0
-    }
-  },
+  "pushes": 20,
+  "cycle": 252,
+  "positions": {},
   "closed": [
     {
       "symbol": "ETHUSDT",
@@ -517,6 +505,21 @@
       "exit_price": 12.369429,
       "exit_reason": "STOP",
       "pnl_pct": -1.28
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2637.96,
+      "stop": 2619.43,
+      "initial_stop": 2619.43,
+      "take": 2684.285,
+      "size": 5.396654,
+      "entry_ts": "2026-09-19T18:59:25.800685+00:00",
+      "confidence": 86,
+      "trail_updates": 0,
+      "exit_ts": "2026-09-20T01:35:48.383977+00:00",
+      "exit_price": 2619.43,
+      "exit_reason": "STOP",
+      "pnl_pct": -0.7
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
