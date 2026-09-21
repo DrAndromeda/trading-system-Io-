@@ -827,10 +827,46 @@
       "size": 458.715596,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-21T12:46:22.310219+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 788.82,
+      "rsi": {
+        "15m": 62.6,
+        "1h": 64.4,
+        "4h": 65.9,
+        "6h": 72.7,
+        "12h": 77.9,
+        "1d": 64.0,
+        "3d": 78.2,
+        "1w": 74.5,
+        "1M": 50.2
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.43,
+      "entry": 788.82,
+      "stop": 782.02,
+      "take": 805.82,
+      "size": 14.705882,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 54,
-  "cycle": 660,
+  "pushes": 55,
+  "cycle": 672,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -841,6 +877,17 @@
       "size": 458.715596,
       "entry_ts": "2026-09-21T09:54:09.111501+00:00",
       "confidence": 92,
+      "trail_updates": 0
+    },
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 788.82,
+      "stop": 782.02,
+      "initial_stop": 782.02,
+      "take": 805.82,
+      "size": 14.705882,
+      "entry_ts": "2026-09-21T12:46:38.868882+00:00",
+      "confidence": 86,
       "trail_updates": 0
     }
   },
