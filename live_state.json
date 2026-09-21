@@ -829,20 +829,9 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 53,
-  "cycle": 648,
+  "pushes": 54,
+  "cycle": 660,
   "positions": {
-    "BNBUSDT": {
-      "symbol": "BNBUSDT",
-      "entry": 773.83,
-      "stop": 779.805714,
-      "initial_stop": 767.305714,
-      "take": 790.140714,
-      "size": 15.327348,
-      "entry_ts": "2026-09-21T05:24:45.132889+00:00",
-      "confidence": 86,
-      "trail_updates": 6
-    },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.962,
@@ -1125,6 +1114,21 @@
       "exit_price": 12.997786,
       "exit_reason": "TAKE",
       "pnl_pct": 4.18
+    },
+    {
+      "symbol": "BNBUSDT",
+      "entry": 773.83,
+      "stop": 784.565714,
+      "initial_stop": 767.305714,
+      "take": 790.140714,
+      "size": 15.327348,
+      "entry_ts": "2026-09-21T05:24:45.132889+00:00",
+      "confidence": 86,
+      "trail_updates": 14,
+      "exit_ts": "2026-09-21T11:36:03.578221+00:00",
+      "exit_price": 790.140714,
+      "exit_reason": "TAKE",
+      "pnl_pct": 2.11
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
