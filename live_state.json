@@ -899,10 +899,46 @@
       "size": 4.11305,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-21T17:19:20.802335+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 795.0,
+      "rsi": {
+        "15m": 50.8,
+        "1h": 67.8,
+        "4h": 63.5,
+        "6h": 75.7,
+        "12h": 79.8,
+        "1d": 65.2,
+        "3d": 78.6,
+        "1w": 74.9,
+        "1M": 50.5
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.66,
+      "entry": 795.0,
+      "stop": 784.435714,
+      "take": 821.410714,
+      "size": 9.465855,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 57,
-  "cycle": 696,
+  "pushes": 58,
+  "cycle": 708,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -915,27 +951,27 @@
       "confidence": 92,
       "trail_updates": 0
     },
-    "BNBUSDT": {
-      "symbol": "BNBUSDT",
-      "entry": 788.82,
-      "stop": 798.78,
-      "initial_stop": 782.02,
-      "take": 805.82,
-      "size": 14.705882,
-      "entry_ts": "2026-09-21T12:46:38.868882+00:00",
-      "confidence": 86,
-      "trail_updates": 4
-    },
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2733.8,
-      "stop": 2738.887143,
+      "stop": 2741.247143,
       "initial_stop": 2709.487143,
       "take": 2794.582143,
       "size": 4.11305,
       "entry_ts": "2026-09-21T14:01:00.267699+00:00",
       "confidence": 86,
-      "trail_updates": 1
+      "trail_updates": 2
+    },
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 795.0,
+      "stop": 784.435714,
+      "initial_stop": 784.435714,
+      "take": 821.410714,
+      "size": 9.465855,
+      "entry_ts": "2026-09-21T17:19:38.283120+00:00",
+      "confidence": 86,
+      "trail_updates": 0
     }
   },
   "closed": [
@@ -1223,6 +1259,21 @@
       "exit_price": 790.140714,
       "exit_reason": "TAKE",
       "pnl_pct": 2.11
+    },
+    {
+      "symbol": "BNBUSDT",
+      "entry": 788.82,
+      "stop": 798.78,
+      "initial_stop": 782.02,
+      "take": 805.82,
+      "size": 14.705882,
+      "entry_ts": "2026-09-21T12:46:38.868882+00:00",
+      "confidence": 86,
+      "trail_updates": 4,
+      "exit_ts": "2026-09-21T16:27:30.174509+00:00",
+      "exit_price": 798.78,
+      "exit_reason": "STOP",
+      "pnl_pct": 1.26
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
