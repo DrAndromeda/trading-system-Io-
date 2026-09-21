@@ -937,8 +937,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 63,
-  "cycle": 768,
+  "pushes": 64,
+  "cycle": 780,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -954,13 +954,13 @@
     "BNBUSDT": {
       "symbol": "BNBUSDT",
       "entry": 795.0,
-      "stop": 795.475714,
+      "stop": 796.245714,
       "initial_stop": 784.435714,
       "take": 821.410714,
       "size": 9.465855,
       "entry_ts": "2026-09-21T17:19:38.283120+00:00",
       "confidence": 86,
-      "trail_updates": 1
+      "trail_updates": 3
     }
   },
   "closed": [
