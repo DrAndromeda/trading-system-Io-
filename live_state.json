@@ -719,10 +719,82 @@
       "size": 4874.651811,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-21T05:17:07.812265+00:00",
+      "symbol": "ETHUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 2664.5,
+      "rsi": {
+        "15m": 62.2,
+        "1h": 65.2,
+        "4h": 64.2,
+        "6h": 77.5,
+        "12h": 64.9,
+        "1d": 64.3,
+        "3d": 83.1,
+        "1w": 79.9,
+        "1M": 40.0
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.36,
+      "entry": 2664.5,
+      "stop": 2645.25,
+      "take": 2712.625,
+      "size": 5.194805,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-21T05:24:29.824691+00:00",
+      "symbol": "BNBUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 773.83,
+      "rsi": {
+        "15m": 48.6,
+        "1h": 67.7,
+        "4h": 60.1,
+        "6h": 76.3,
+        "12h": 74.5,
+        "1d": 60.6,
+        "3d": 77.0,
+        "1w": 73.6,
+        "1M": 49.6
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.42,
+      "entry": 773.83,
+      "stop": 767.305714,
+      "take": 790.140714,
+      "size": 15.327348,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 48,
-  "cycle": 588,
+  "pushes": 49,
+  "cycle": 600,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -755,6 +827,28 @@
       "size": 4874.651811,
       "entry_ts": "2026-09-21T02:04:16.219837+00:00",
       "confidence": 82,
+      "trail_updates": 0
+    },
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "entry": 2664.5,
+      "stop": 2645.25,
+      "initial_stop": 2645.25,
+      "take": 2712.625,
+      "size": 5.194805,
+      "entry_ts": "2026-09-21T05:17:33.022497+00:00",
+      "confidence": 86,
+      "trail_updates": 0
+    },
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "entry": 773.83,
+      "stop": 767.305714,
+      "initial_stop": 767.305714,
+      "take": 790.140714,
+      "size": 15.327348,
+      "entry_ts": "2026-09-21T05:24:45.132889+00:00",
+      "confidence": 86,
       "trail_updates": 0
     }
   },
