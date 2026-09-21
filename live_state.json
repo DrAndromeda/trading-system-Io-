@@ -937,8 +937,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 65,
-  "cycle": 792,
+  "pushes": 66,
+  "cycle": 804,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
