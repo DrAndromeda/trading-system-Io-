@@ -793,52 +793,41 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 50,
-  "cycle": 612,
+  "pushes": 51,
+  "cycle": 624,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.476,
-      "stop": 12.529286,
+      "stop": 12.646286,
       "initial_stop": 12.267286,
       "take": 12.997786,
       "size": 479.123888,
       "entry_ts": "2026-09-21T01:57:00.715756+00:00",
       "confidence": 92,
-      "trail_updates": 3
-    },
-    "XRPUSDT": {
-      "symbol": "XRPUSDT",
-      "entry": 1.415,
-      "stop": 1.438486,
-      "initial_stop": 1.394486,
-      "take": 1.466286,
-      "size": 4874.651811,
-      "entry_ts": "2026-09-21T02:04:16.219837+00:00",
-      "confidence": 82,
       "trail_updates": 7
     },
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2664.5,
-      "stop": 2670.63,
+      "stop": 2684.29,
       "initial_stop": 2645.25,
       "take": 2712.625,
       "size": 5.194805,
       "entry_ts": "2026-09-21T05:17:33.022497+00:00",
       "confidence": 86,
-      "trail_updates": 2
+      "trail_updates": 4
     },
     "BNBUSDT": {
       "symbol": "BNBUSDT",
       "entry": 773.83,
-      "stop": 767.305714,
+      "stop": 776.175714,
       "initial_stop": 767.305714,
       "take": 790.140714,
       "size": 15.327348,
       "entry_ts": "2026-09-21T05:24:45.132889+00:00",
       "confidence": 86,
-      "trail_updates": 0
+      "trail_updates": 3
     }
   },
   "closed": [
@@ -1066,6 +1055,21 @@
       "exit_price": 82827.068571,
       "exit_reason": "TAKE",
       "pnl_pct": 1.95
+    },
+    {
+      "symbol": "XRPUSDT",
+      "entry": 1.415,
+      "stop": 1.450886,
+      "initial_stop": 1.394486,
+      "take": 1.466286,
+      "size": 4874.651811,
+      "entry_ts": "2026-09-21T02:04:16.219837+00:00",
+      "confidence": 82,
+      "trail_updates": 8,
+      "exit_ts": "2026-09-21T08:41:44.224939+00:00",
+      "exit_price": 1.466286,
+      "exit_reason": "TAKE",
+      "pnl_pct": 3.62
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
