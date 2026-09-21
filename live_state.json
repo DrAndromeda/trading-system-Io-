@@ -901,8 +901,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 56,
-  "cycle": 684,
+  "pushes": 57,
+  "cycle": 696,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -918,24 +918,24 @@
     "BNBUSDT": {
       "symbol": "BNBUSDT",
       "entry": 788.82,
-      "stop": 789.48,
+      "stop": 798.78,
       "initial_stop": 782.02,
       "take": 805.82,
       "size": 14.705882,
       "entry_ts": "2026-09-21T12:46:38.868882+00:00",
       "confidence": 86,
-      "trail_updates": 2
+      "trail_updates": 4
     },
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2733.8,
-      "stop": 2709.487143,
+      "stop": 2738.887143,
       "initial_stop": 2709.487143,
       "take": 2794.582143,
       "size": 4.11305,
       "entry_ts": "2026-09-21T14:01:00.267699+00:00",
       "confidence": 86,
-      "trail_updates": 0
+      "trail_updates": 1
     }
   },
   "closed": [
