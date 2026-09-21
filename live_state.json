@@ -613,63 +613,63 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 43,
-  "cycle": 528,
+  "pushes": 44,
+  "cycle": 540,
   "positions": {
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2623.01,
-      "stop": 2593.75,
+      "stop": 2652.7,
       "initial_stop": 2593.75,
       "take": 2696.16,
       "size": 3.417635,
       "entry_ts": "2026-09-20T17:29:18.631520+00:00",
       "confidence": 91,
-      "trail_updates": 0
+      "trail_updates": 2
     },
     "SOLUSDT": {
       "symbol": "SOLUSDT",
       "entry": 109.64,
-      "stop": 109.754286,
+      "stop": 111.154286,
       "initial_stop": 108.504286,
       "take": 112.479286,
       "size": 88.050314,
       "entry_ts": "2026-09-20T17:29:18.631520+00:00",
       "confidence": 91,
-      "trail_updates": 2
+      "trail_updates": 8
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
       "entry": 1.4055,
-      "stop": 1.387943,
+      "stop": 1.407643,
       "initial_stop": 1.387943,
       "take": 1.449393,
       "size": 5695.687551,
       "entry_ts": "2026-09-20T18:18:05.974215+00:00",
       "confidence": 82,
-      "trail_updates": 0
+      "trail_updates": 1
     },
     "BTCUSDT": {
       "symbol": "BTCUSDT",
       "entry": 81100.0,
-      "stop": 80634.205714,
+      "stop": 81174.215714,
       "initial_stop": 80634.205714,
       "take": 82264.485714,
       "size": 0.184957,
       "entry_ts": "2026-09-20T18:51:44.613158+00:00",
       "confidence": 86,
-      "trail_updates": 0
+      "trail_updates": 1
     },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.4,
-      "stop": 12.187143,
+      "stop": 12.460143,
       "initial_stop": 12.187143,
       "take": 12.932143,
       "size": 469.798658,
       "entry_ts": "2026-09-20T18:55:21.497724+00:00",
       "confidence": 87,
-      "trail_updates": 0
+      "trail_updates": 2
     }
   },
   "closed": [
