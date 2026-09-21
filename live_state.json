@@ -791,43 +791,68 @@
       "size": 15.327348,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-21T09:53:58.792647+00:00",
+      "symbol": "LINKUSDT",
+      "signal": "LONG",
+      "confidence": 92,
+      "price": 12.962,
+      "rsi": {
+        "15m": 69.4,
+        "1h": 65.5,
+        "4h": 62.6,
+        "6h": 79.8,
+        "12h": 70.9,
+        "1d": 52.2,
+        "3d": 74.2,
+        "1w": 70.8,
+        "1M": 43.1
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "down"
+      },
+      "atr_pct": 0.84,
+      "entry": 12.962,
+      "stop": 12.744,
+      "take": 13.507,
+      "size": 458.715596,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 51,
-  "cycle": 624,
+  "pushes": 52,
+  "cycle": 636,
   "positions": {
-    "LINKUSDT": {
-      "symbol": "LINKUSDT",
-      "entry": 12.476,
-      "stop": 12.646286,
-      "initial_stop": 12.267286,
-      "take": 12.997786,
-      "size": 479.123888,
-      "entry_ts": "2026-09-21T01:57:00.715756+00:00",
-      "confidence": 92,
-      "trail_updates": 7
-    },
-    "ETHUSDT": {
-      "symbol": "ETHUSDT",
-      "entry": 2664.5,
-      "stop": 2684.29,
-      "initial_stop": 2645.25,
-      "take": 2712.625,
-      "size": 5.194805,
-      "entry_ts": "2026-09-21T05:17:33.022497+00:00",
-      "confidence": 86,
-      "trail_updates": 4
-    },
     "BNBUSDT": {
       "symbol": "BNBUSDT",
       "entry": 773.83,
-      "stop": 776.175714,
+      "stop": 779.805714,
       "initial_stop": 767.305714,
       "take": 790.140714,
       "size": 15.327348,
       "entry_ts": "2026-09-21T05:24:45.132889+00:00",
       "confidence": 86,
-      "trail_updates": 3
+      "trail_updates": 6
+    },
+    "LINKUSDT": {
+      "symbol": "LINKUSDT",
+      "entry": 12.962,
+      "stop": 12.744,
+      "initial_stop": 12.744,
+      "take": 13.507,
+      "size": 458.715596,
+      "entry_ts": "2026-09-21T09:54:09.111501+00:00",
+      "confidence": 92,
+      "trail_updates": 0
     }
   },
   "closed": [
@@ -1070,6 +1095,36 @@
       "exit_price": 1.466286,
       "exit_reason": "TAKE",
       "pnl_pct": 3.62
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2664.5,
+      "stop": 2711.25,
+      "initial_stop": 2645.25,
+      "take": 2712.625,
+      "size": 5.194805,
+      "entry_ts": "2026-09-21T05:17:33.022497+00:00",
+      "confidence": 86,
+      "trail_updates": 6,
+      "exit_ts": "2026-09-21T09:32:31.245933+00:00",
+      "exit_price": 2712.625,
+      "exit_reason": "TAKE",
+      "pnl_pct": 1.81
+    },
+    {
+      "symbol": "LINKUSDT",
+      "entry": 12.476,
+      "stop": 12.837286,
+      "initial_stop": 12.267286,
+      "take": 12.997786,
+      "size": 479.123888,
+      "entry_ts": "2026-09-21T01:57:00.715756+00:00",
+      "confidence": 92,
+      "trail_updates": 11,
+      "exit_ts": "2026-09-21T09:36:07.023724+00:00",
+      "exit_price": 12.997786,
+      "exit_reason": "TAKE",
+      "pnl_pct": 4.18
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
