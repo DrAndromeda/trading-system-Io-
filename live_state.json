@@ -937,8 +937,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 58,
-  "cycle": 708,
+  "pushes": 59,
+  "cycle": 720,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -950,17 +950,6 @@
       "entry_ts": "2026-09-21T09:54:09.111501+00:00",
       "confidence": 92,
       "trail_updates": 0
-    },
-    "ETHUSDT": {
-      "symbol": "ETHUSDT",
-      "entry": 2733.8,
-      "stop": 2741.247143,
-      "initial_stop": 2709.487143,
-      "take": 2794.582143,
-      "size": 4.11305,
-      "entry_ts": "2026-09-21T14:01:00.267699+00:00",
-      "confidence": 86,
-      "trail_updates": 2
     },
     "BNBUSDT": {
       "symbol": "BNBUSDT",
@@ -1274,6 +1263,21 @@
       "exit_price": 798.78,
       "exit_reason": "STOP",
       "pnl_pct": 1.26
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2733.8,
+      "stop": 2741.247143,
+      "initial_stop": 2709.487143,
+      "take": 2794.582143,
+      "size": 4.11305,
+      "entry_ts": "2026-09-21T14:01:00.267699+00:00",
+      "confidence": 86,
+      "trail_updates": 2,
+      "exit_ts": "2026-09-21T17:49:01.170376+00:00",
+      "exit_price": 2741.247143,
+      "exit_reason": "STOP",
+      "pnl_pct": 0.27
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
