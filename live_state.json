@@ -793,52 +793,41 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 49,
-  "cycle": 600,
+  "pushes": 50,
+  "cycle": 612,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.476,
-      "stop": 12.483286,
+      "stop": 12.529286,
       "initial_stop": 12.267286,
       "take": 12.997786,
       "size": 479.123888,
       "entry_ts": "2026-09-21T01:57:00.715756+00:00",
       "confidence": 92,
-      "trail_updates": 1
-    },
-    "BTCUSDT": {
-      "symbol": "BTCUSDT",
-      "entry": 81241.29,
-      "stop": 80606.978571,
-      "initial_stop": 80606.978571,
-      "take": 82827.068571,
-      "size": 0.157651,
-      "entry_ts": "2026-09-21T02:04:16.219837+00:00",
-      "confidence": 86,
-      "trail_updates": 0
+      "trail_updates": 3
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
       "entry": 1.415,
-      "stop": 1.394486,
+      "stop": 1.438486,
       "initial_stop": 1.394486,
       "take": 1.466286,
       "size": 4874.651811,
       "entry_ts": "2026-09-21T02:04:16.219837+00:00",
       "confidence": 82,
-      "trail_updates": 0
+      "trail_updates": 7
     },
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2664.5,
-      "stop": 2645.25,
+      "stop": 2670.63,
       "initial_stop": 2645.25,
       "take": 2712.625,
       "size": 5.194805,
       "entry_ts": "2026-09-21T05:17:33.022497+00:00",
       "confidence": 86,
-      "trail_updates": 0
+      "trail_updates": 2
     },
     "BNBUSDT": {
       "symbol": "BNBUSDT",
@@ -1062,6 +1051,21 @@
       "exit_price": 12.560143,
       "exit_reason": "STOP",
       "pnl_pct": 1.29
+    },
+    {
+      "symbol": "BTCUSDT",
+      "entry": 81241.29,
+      "stop": 82218.128571,
+      "initial_stop": 80606.978571,
+      "take": 82827.068571,
+      "size": 0.157651,
+      "entry_ts": "2026-09-21T02:04:16.219837+00:00",
+      "confidence": 86,
+      "trail_updates": 5,
+      "exit_ts": "2026-09-21T08:38:03.234971+00:00",
+      "exit_price": 82827.068571,
+      "exit_reason": "TAKE",
+      "pnl_pct": 1.95
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
