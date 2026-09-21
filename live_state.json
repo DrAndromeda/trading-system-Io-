@@ -613,63 +613,52 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 44,
-  "cycle": 540,
+  "pushes": 45,
+  "cycle": 552,
   "positions": {
     "ETHUSDT": {
       "symbol": "ETHUSDT",
       "entry": 2623.01,
-      "stop": 2652.7,
+      "stop": 2666.74,
       "initial_stop": 2593.75,
       "take": 2696.16,
       "size": 3.417635,
       "entry_ts": "2026-09-20T17:29:18.631520+00:00",
       "confidence": 91,
-      "trail_updates": 2
-    },
-    "SOLUSDT": {
-      "symbol": "SOLUSDT",
-      "entry": 109.64,
-      "stop": 111.154286,
-      "initial_stop": 108.504286,
-      "take": 112.479286,
-      "size": 88.050314,
-      "entry_ts": "2026-09-20T17:29:18.631520+00:00",
-      "confidence": 91,
-      "trail_updates": 8
+      "trail_updates": 4
     },
     "XRPUSDT": {
       "symbol": "XRPUSDT",
       "entry": 1.4055,
-      "stop": 1.407643,
+      "stop": 1.412543,
       "initial_stop": 1.387943,
       "take": 1.449393,
       "size": 5695.687551,
       "entry_ts": "2026-09-20T18:18:05.974215+00:00",
       "confidence": 82,
-      "trail_updates": 1
+      "trail_updates": 2
     },
     "BTCUSDT": {
       "symbol": "BTCUSDT",
       "entry": 81100.0,
-      "stop": 81174.215714,
+      "stop": 81350.255714,
       "initial_stop": 80634.205714,
       "take": 82264.485714,
       "size": 0.184957,
       "entry_ts": "2026-09-20T18:51:44.613158+00:00",
       "confidence": 86,
-      "trail_updates": 1
+      "trail_updates": 2
     },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.4,
-      "stop": 12.460143,
+      "stop": 12.560143,
       "initial_stop": 12.187143,
       "take": 12.932143,
       "size": 469.798658,
       "entry_ts": "2026-09-20T18:55:21.497724+00:00",
       "confidence": 87,
-      "trail_updates": 2
+      "trail_updates": 3
     }
   },
   "closed": [
@@ -807,6 +796,21 @@
       "exit_price": 761.114286,
       "exit_reason": "STOP",
       "pnl_pct": 0.61
+    },
+    {
+      "symbol": "SOLUSDT",
+      "entry": 109.64,
+      "stop": 111.514286,
+      "initial_stop": 108.504286,
+      "take": 112.479286,
+      "size": 88.050314,
+      "entry_ts": "2026-09-20T17:29:18.631520+00:00",
+      "confidence": 91,
+      "trail_updates": 9,
+      "exit_ts": "2026-09-21T00:22:00.462792+00:00",
+      "exit_price": 112.479286,
+      "exit_reason": "TAKE",
+      "pnl_pct": 2.59
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
