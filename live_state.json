@@ -721,19 +721,19 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 47,
-  "cycle": 576,
+  "pushes": 48,
+  "cycle": 588,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
       "entry": 12.476,
-      "stop": 12.267286,
+      "stop": 12.483286,
       "initial_stop": 12.267286,
       "take": 12.997786,
       "size": 479.123888,
       "entry_ts": "2026-09-21T01:57:00.715756+00:00",
       "confidence": 92,
-      "trail_updates": 0
+      "trail_updates": 1
     },
     "BTCUSDT": {
       "symbol": "BTCUSDT",
