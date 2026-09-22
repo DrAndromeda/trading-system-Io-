@@ -1009,8 +1009,8 @@
       "funding_ann": 0
     }
   ],
-  "pushes": 77,
-  "cycle": 936,
+  "pushes": 78,
+  "cycle": 948,
   "positions": {
     "XRPUSDT": {
       "symbol": "XRPUSDT",
@@ -1021,17 +1021,6 @@
       "size": 3036.876356,
       "entry_ts": "2026-09-22T00:09:54.362334+00:00",
       "confidence": 86,
-      "trail_updates": 0
-    },
-    "LINKUSDT": {
-      "symbol": "LINKUSDT",
-      "entry": 13.232,
-      "stop": 13.064857,
-      "initial_stop": 13.064857,
-      "take": 13.649857,
-      "size": 598.290598,
-      "entry_ts": "2026-09-22T13:04:02.322344+00:00",
-      "confidence": 92,
       "trail_updates": 0
     }
   },
@@ -1380,6 +1369,21 @@
       "exit_price": 13.046,
       "exit_reason": "STOP",
       "pnl_pct": 0.65
+    },
+    {
+      "symbol": "LINKUSDT",
+      "entry": 13.232,
+      "stop": 13.064857,
+      "initial_stop": 13.064857,
+      "take": 13.649857,
+      "size": 598.290598,
+      "entry_ts": "2026-09-22T13:04:02.322344+00:00",
+      "confidence": 92,
+      "trail_updates": 0,
+      "exit_ts": "2026-09-22T13:22:26.968291+00:00",
+      "exit_price": 13.064857,
+      "exit_reason": "STOP",
+      "pnl_pct": -1.26
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
