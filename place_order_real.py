@@ -248,6 +248,13 @@ def main():
                 }
                 with ORDERS_LOG.open("a") as f:
                     f.write(json.dumps(rec, default=str) + "\n")
+                # Вечная история
+                with HISTORY_LOG.open("a") as f:
+                    hist = {"action": "OPEN", "ts": rec["ts"], "symbol": sym,
+                            "entry": cur_price if "cur_price" in dir() else rec.get("entry"),
+                            "stop": rec["stop"], "take": rec["take"],
+                            "qty": rec["qty"], "notional": rec["notional"]}
+                    f.write(json.dumps(hist, default=str) + "\n")
                 placed[key] = rec
                 PLACED_FILE.write_text(json.dumps(placed, indent=2, default=str))
                 active.append(key)
