@@ -1115,31 +1115,56 @@
       "size": 4.857064,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T14:50:37.325187+00:00",
+      "symbol": "BTCUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 86032.0,
+      "rsi": {
+        "15m": 52.4,
+        "1h": 52.5,
+        "4h": 84.6,
+        "6h": 76.6,
+        "12h": 88.5,
+        "1d": 70.3,
+        "3d": 82.8,
+        "1w": 75.3,
+        "1M": 37.0
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.37,
+      "entry": 86032.0,
+      "stop": 85386.898571,
+      "take": 87644.753571,
+      "size": 0.155014,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
   "pushes": 78,
-  "cycle": 960,
+  "cycle": 972,
   "positions": {
     "BTCUSDT": {
       "symbol": "BTCUSDT",
-      "entry": 86188.06,
-      "stop": 85654.938571,
-      "initial_stop": 85654.938571,
-      "take": 87520.863571,
-      "size": 0.174038,
-      "entry_ts": "2026-09-22T14:02:59.883059+00:00",
-      "confidence": 82,
-      "trail_updates": 0
-    },
-    "LINKUSDT": {
-      "symbol": "LINKUSDT",
-      "entry": 13.086,
-      "stop": 12.888857,
-      "initial_stop": 12.888857,
-      "take": 13.578857,
-      "size": 507.246377,
-      "entry_ts": "2026-09-22T14:02:59.883059+00:00",
-      "confidence": 83,
+      "entry": 86032.0,
+      "stop": 85386.898571,
+      "initial_stop": 85386.898571,
+      "take": 87644.753571,
+      "size": 0.155014,
+      "entry_ts": "2026-09-22T14:51:13.538860+00:00",
+      "confidence": 86,
       "trail_updates": 0
     }
   },
@@ -1533,6 +1558,36 @@
       "exit_price": 2736.181429,
       "exit_reason": "STOP",
       "pnl_pct": -0.75
+    },
+    {
+      "symbol": "BTCUSDT",
+      "entry": 86188.06,
+      "stop": 85654.938571,
+      "initial_stop": 85654.938571,
+      "take": 87520.863571,
+      "size": 0.174038,
+      "entry_ts": "2026-09-22T14:02:59.883059+00:00",
+      "confidence": 82,
+      "trail_updates": 0,
+      "exit_ts": "2026-09-22T14:36:24.633070+00:00",
+      "exit_price": 85654.938571,
+      "exit_reason": "STOP",
+      "pnl_pct": -0.62
+    },
+    {
+      "symbol": "LINKUSDT",
+      "entry": 13.086,
+      "stop": 12.888857,
+      "initial_stop": 12.888857,
+      "take": 13.578857,
+      "size": 507.246377,
+      "entry_ts": "2026-09-22T14:02:59.883059+00:00",
+      "confidence": 83,
+      "trail_updates": 0,
+      "exit_ts": "2026-09-22T14:36:24.633070+00:00",
+      "exit_price": 12.888857,
+      "exit_reason": "STOP",
+      "pnl_pct": -1.51
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
