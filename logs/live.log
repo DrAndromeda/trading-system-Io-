@@ -9903,3 +9903,10 @@ fatal: unable to acce
 [03:26:01]     PAXGUSDT: WAIT         conf=45% RSI=67.9/66.5/49.3/50.5
 [03:26:01] Sleep 180s...
 
+[03:29:06]   ✅ BTCUSDT: LONG         conf=82% RSI=45.5/67.4/82.1/71.4
+[03:29:12]   ✅ ETHUSDT: LONG         conf=86% RSI=57.7/64.3/78.5/68.4
+[03:29:17]     XRPUSDT: WAIT         conf=76% RSI=58.9/67.8/88.5/62.3
+[03:29:22]     BNBUSDT: WAIT         conf=71% RSI=42.5/50.9/67.3/59.4
+[03:29:27]   ✅ LINKUSDT: LONG         conf=83% RSI=50.9/55.4/69.8/55.0
+[03:29:32]   ✅ SOLUSDT: LONG         conf=86% RSI=61.8/65.4/82.4/66.0
+[03:29:37]     PAXGUSDT: WAIT         conf=45% RSI=68.0/66.7/49.3/50.6
