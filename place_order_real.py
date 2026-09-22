@@ -15,8 +15,8 @@ PLACED_FILE = ROOT / "logs" / "real_placed.json"
 KILL_SWITCH = ROOT / "STOP_TRADING"
 BASE_URL = "https://fapi.binance.com"
 
-ALLOWED_SYMBOLS = ["XRPUSDT", "LINKUSDT", "DOGEUSDT"]
-LEVERAGE = 3
+ALLOWED_SYMBOLS = ["XRPUSDT", "LINKUSDT", "DOGEUSDT", "ETHUSDT", "SOLUSDT"]
+LEVERAGE = 5
 NOTIONAL_PER_TRADE = 25
 POLL_SEC = 60
 STOP_LOSS_PCT = 0.10
@@ -80,6 +80,7 @@ def get_symbol_info(sym):
     return None
 
 from decimal import Decimal, ROUND_CEILING, ROUND_DOWN
+from notifier import send as tg_send
 
 def _decimals(s):
     s_str = f"{s:.10f}".rstrip('0')
@@ -251,6 +252,19 @@ def main():
                 PLACED_FILE.write_text(json.dumps(placed, indent=2, default=str))
                 active.append(key)
                 log(f"   Orders placed")
+                # Telegram уведомление
+                try:
+                    msg = ("🚀 <b>NEW POSITION</b>\n"
+                           + str(sym) + " LONG\n"
+                           + "Entry: <code>$" + str(pos["entry"]) + "</code>\n"
+                           + "Stop:  <code>$" + str(pos["stop"]) + "</code>\n"
+                           + "Take:  <code>$" + str(pos["take"]) + "</code>\n"
+                           + "Qty:   " + str(qty) + "\n"
+                           + "Notional: $" + str(round(qty * pos["entry"], 2)) + "\n"
+                           + "Leverage: " + str(LEVERAGE) + "x")
+                    tg_send(msg)
+                except Exception as _e:
+                    log(f"   tg_send err: {_e}")
 
         log(f"Sleep {POLL_SEC}s...\n")
         time.sleep(POLL_SEC)

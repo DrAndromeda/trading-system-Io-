@@ -10,3 +10,5 @@ data/quarterly/
 logs/*.jsonl
 logs/*.json
 STOP_TRADING
+.env.telegram
+.env.telegram
