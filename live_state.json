@@ -935,10 +935,46 @@
       "size": 9.465855,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T00:09:33.928324+00:00",
+      "symbol": "XRPUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 1.531,
+      "rsi": {
+        "15m": 50.2,
+        "1h": 66.8,
+        "4h": 74.6,
+        "6h": 77.0,
+        "12h": 63.3,
+        "1d": 59.1,
+        "3d": 74.6,
+        "1w": 64.2,
+        "1M": 22.1
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 1.08,
+      "entry": 1.531,
+      "stop": 1.498071,
+      "take": 1.613321,
+      "size": 3036.876356,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
-  "pushes": 66,
-  "cycle": 804,
+  "pushes": 67,
+  "cycle": 816,
   "positions": {
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -961,6 +997,17 @@
       "entry_ts": "2026-09-21T17:19:38.283120+00:00",
       "confidence": 86,
       "trail_updates": 4
+    },
+    "XRPUSDT": {
+      "symbol": "XRPUSDT",
+      "entry": 1.531,
+      "stop": 1.498071,
+      "initial_stop": 1.498071,
+      "take": 1.613321,
+      "size": 3036.876356,
+      "entry_ts": "2026-09-22T00:09:54.362334+00:00",
+      "confidence": 86,
+      "trail_updates": 0
     }
   },
   "closed": [
