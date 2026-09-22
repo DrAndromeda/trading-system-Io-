@@ -11,3 +11,5 @@ data/*.parquet
 data/*.json
 data/*.npz
 !data/onchain/blockchain_info.json
+.env.testnet
+.env

@@ -1298,7 +1298,7 @@
     }
   ],
   "pushes": 78,
-  "cycle": 1011,
+  "cycle": 1020,
   "positions": {
     "BTCUSDT": {
       "symbol": "BTCUSDT",
@@ -1310,17 +1310,6 @@
       "entry_ts": "2026-09-22T14:51:13.538860+00:00",
       "confidence": 86,
       "trail_updates": 0
-    },
-    "XRPUSDT": {
-      "symbol": "XRPUSDT",
-      "entry": 1.5522,
-      "stop": 1.587069,
-      "initial_stop": 1.513343,
-      "take": 1.649343,
-      "size": 2573.529412,
-      "entry_ts": "2026-09-22T16:20:50.532795+00:00",
-      "confidence": 82,
-      "trail_updates": 1
     },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
@@ -1776,6 +1765,21 @@
       "exit_price": 12.888857,
       "exit_reason": "STOP",
       "pnl_pct": -1.51
+    },
+    {
+      "symbol": "XRPUSDT",
+      "entry": 1.5522,
+      "stop": 1.587069,
+      "initial_stop": 1.513343,
+      "take": 1.649343,
+      "size": 2573.529412,
+      "entry_ts": "2026-09-22T16:20:50.532795+00:00",
+      "confidence": 82,
+      "trail_updates": 1,
+      "exit_ts": "2026-09-22T19:18:53.469271+00:00",
+      "exit_price": 1.587069,
+      "exit_reason": "STOP",
+      "pnl_pct": 2.25
     }
   ],
   "started": "2026-09-19T07:55:07.937683+00:00"
