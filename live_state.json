@@ -1151,10 +1151,46 @@
       "size": 0.155014,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T16:20:26.880990+00:00",
+      "symbol": "XRPUSDT",
+      "signal": "LONG",
+      "confidence": 82,
+      "price": 1.5522,
+      "rsi": {
+        "15m": 53.1,
+        "1h": 61.4,
+        "4h": 83.9,
+        "6h": 72.5,
+        "12h": 85.1,
+        "1d": 60.6,
+        "3d": 75.3,
+        "1w": 64.7,
+        "1M": 22.7
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 1.25,
+      "entry": 1.5522,
+      "stop": 1.513343,
+      "take": 1.649343,
+      "size": 2573.529412,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
   "pushes": 78,
-  "cycle": 972,
+  "cycle": 984,
   "positions": {
     "BTCUSDT": {
       "symbol": "BTCUSDT",
@@ -1165,6 +1201,17 @@
       "size": 0.155014,
       "entry_ts": "2026-09-22T14:51:13.538860+00:00",
       "confidence": 86,
+      "trail_updates": 0
+    },
+    "XRPUSDT": {
+      "symbol": "XRPUSDT",
+      "entry": 1.5522,
+      "stop": 1.513343,
+      "initial_stop": 1.513343,
+      "take": 1.649343,
+      "size": 2573.529412,
+      "entry_ts": "2026-09-22T16:20:50.532795+00:00",
+      "confidence": 82,
       "trail_updates": 0
     }
   },
