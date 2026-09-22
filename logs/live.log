@@ -9669,3 +9669,45 @@ fatal: unable to acce
 [02:05:41]     LINKUSDT: WAIT         conf=76% RSI=41.8/53.9/74.6/55.0
 [02:05:46]   ✅ SOLUSDT: LONG         conf=86% RSI=59.6/61.4/82.7/66.0
 [02:05:51]     PAXGUSDT: WAIT         conf=41% RSI=70.5/63.3/48.1/49.9
+[02:05:52] git: remote: Permission to DrAndromeda/trading-system-Io-.git denied to stoianov46.
+fatal: unable to acce
+[02:05:52] Sleep 180s...
+
+[02:08:57]     BTCUSDT: WAIT         conf=68% RSI=47.4/73.7/85.1/72.0
+[02:09:03]   ✅ ETHUSDT: LONG         conf=86% RSI=53.3/62.1/81.0/68.3
+[02:09:08]     XRPUSDT: WAIT         conf=68% RSI=58.0/72.0/91.7/62.7
+[02:09:13]     BNBUSDT: WAIT         conf=78% RSI=46.0/52.5/70.3/59.9
+[02:09:18]     LINKUSDT: WAIT         conf=76% RSI=44.8/55.3/75.6/55.3
+[02:09:23]   ✅ SOLUSDT: LONG         conf=86% RSI=60.2/61.8/82.7/66.0
+[02:09:28]     PAXGUSDT: WAIT         conf=41% RSI=71.6/64.1/48.7/50.2
+[02:09:28] Sleep 180s...
+
+[02:12:33]     BTCUSDT: WAIT         conf=68% RSI=48.3/74.0/85.1/72.2
+[02:12:38]   ✅ ETHUSDT: LONG         conf=86% RSI=54.3/62.7/81.1/68.4
+[02:12:43]     XRPUSDT: WAIT         conf=68% RSI=60.0/72.6/91.8/63.0
+[02:12:49]     BNBUSDT: WAIT         conf=78% RSI=46.8/53.1/70.4/60.0
+[02:12:54]   ✅ LINKUSDT: LONG         conf=83% RSI=47.2/56.4/76.1/55.5
+[02:12:59] LIVE COLLECTOR v7 STARTED (9 timeframes)
+[02:12:59] Symbols: 7 | TFs: 9 | Poll: 180s | Conf: 75
+[02:12:59] State: cycle=1009 signals=36
+[02:13:06]     BTCUSDT: WAIT         conf=68% RSI=49.0/74.2/85.1/72.2
+[02:13:11]   ✅ ETHUSDT: LONG         conf=86% RSI=55.2/63.3/81.1/68.6
+[02:13:16]     XRPUSDT: WAIT         conf=68% RSI=60.4/72.7/91.8/63.0
+[02:13:22]     BNBUSDT: WAIT         conf=78% RSI=47.3/53.4/70.4/60.0
+[02:13:27]   ✅ LINKUSDT: LONG         conf=83% RSI=46.1/55.9/75.9/55.4
+[02:13:32]   ✅ SOLUSDT: LONG         conf=86% RSI=60.2/61.8/82.8/66.0
+[02:13:37]     PAXGUSDT: WAIT         conf=45% RSI=71.9/64.3/48.8/50.3
+[02:13:37] Sleep 180s...
+
+[02:14:39] LIVE COLLECTOR v7 STARTED (9 timeframes)
+[02:14:39] Symbols: 7 | TFs: 9 | Poll: 180s | Conf: 75
+[02:14:39] State: cycle=1010 signals=36
+[02:14:45]     BTCUSDT: WAIT         conf=68% RSI=46.8/73.3/85.0/72.0
+[02:14:51]   ✅ ETHUSDT: LONG         conf=86% RSI=53.8/62.4/81.0/68.4
+[02:14:56]     XRPUSDT: WAIT         conf=73% RSI=57.6/71.8/91.7/62.7
+[02:15:01]     BNBUSDT: WAIT         conf=78% RSI=45.7/52.4/70.3/59.9
+[02:15:07]   ✅ LINKUSDT: LONG         conf=83% RSI=50.1/55.7/75.9/55.3
+[02:15:12]   ✅ SOLUSDT: LONG         conf=86% RSI=63.6/61.3/82.7/65.9
+[02:15:17]     PAXGUSDT: WAIT         conf=45% RSI=70.8/64.5/49.1/50.4
+[02:15:17] Sleep 180s...
+

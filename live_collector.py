@@ -230,8 +230,12 @@ def update_positions(state, latest):
         pos = positions[sym]
         price = latest_map[sym]["price"]
         initial_risk = pos["entry"] - pos["initial_stop"]
-        if (price - pos["entry"]) > initial_risk:
-            new_stop = price - initial_risk
+        profit_pct = (price - pos["entry"]) / pos["entry"] * 100
+        # Trailing активируется ТОЛЬКО после +1% прибыли
+        if profit_pct >= 1.0:
+            # Шаг трейлинга = 0.5×ATR (мягче, чем 1×ATR)
+            atr_now = latest_map[sym].get("atr_pct", 0) * pos["entry"] / 100
+            new_stop = price - 0.5 * atr_now
             if new_stop > pos["stop"]:
                 pos["stop"] = round(new_stop,6)
                 pos["trail_updates"] = pos.get("trail_updates",0) + 1
@@ -269,28 +273,47 @@ def open_new_positions(state, confirmed):
 def update_dashboard(state, latest):
     positions = state.get("positions", {})
     closed = state.get("closed", [])
-    signals_all = state.get("signals", [])
     CAP_PER_POS = CAPITAL / MAX_POSITIONS
 
-    # Live stats
-    total_pnl_usd = 0; total_notional = 0
+    # === РАСЧЁТ ПРИБЫЛИ В $ ===
+    total_realized_usd = 0
+    today_realized_usd = 0
+    today_date = datetime.now(timezone.utc).date()
+    for c in closed:
+        size = c.get("size", 0)
+        entry = c.get("entry", 0)
+        exit_price = c.get("exit_price", 0)
+        usd = size * (exit_price - entry) if size and entry else 0
+        total_realized_usd += usd
+        exit_ts = c.get("exit_ts", "")
+        if exit_ts:
+            try:
+                exit_date = datetime.fromisoformat(exit_ts.replace("Z","+00:00")).date()
+                if exit_date == today_date:
+                    today_realized_usd += usd
+            except Exception:
+                pass
+
+    unrealized_usd = 0
+    total_pnl_usd = 0
+    total_notional = 0
     for sym, p_data in positions.items():
         cur = next((s for s in latest if s["symbol"]==sym), None)
         if cur:
-            total_pnl_usd += p_data["size"] * (cur["price"] - p_data["entry"])
+            u = p_data["size"] * (cur["price"] - p_data["entry"])
+            unrealized_usd += u
+            total_pnl_usd += u
             total_notional += p_data["size"] * cur["price"]
+
+    current_deposit = CAPITAL + total_realized_usd + unrealized_usd
     total_lev = total_notional / CAPITAL if CAPITAL > 0 else 0
 
-    # Historical stats
     n_closed = len(closed)
     wins = [c for c in closed if c.get("pnl_pct", 0) > 0]
     losses = [c for c in closed if c.get("pnl_pct", 0) <= 0]
     win_rate = (len(wins) / n_closed * 100) if n_closed > 0 else 0
-    avg_win = sum(c["pnl_pct"] for c in wins) / len(wins) if wins else 0
-    avg_loss = sum(c["pnl_pct"] for c in losses) / len(losses) if losses else 0
-    total_closed_pnl = sum(c["pnl_pct"] for c in closed)
 
-    # Signal cards (compact)
+    # Signal cards
     cards = ""
     for s in latest:
         if s["signal"] == "LONG": badge, cls = '<div class="sig-badge long">LONG</div>', "sig-long"
@@ -309,7 +332,6 @@ def update_dashboard(state, latest):
         trend = s.get("trend", {})
         up_count = sum(1 for tf in TIMEFRAMES if trend.get(tf) == "up")
         rsi_show = f"{rsi.get('15m','-')} / {rsi.get('1h','-')} / {rsi.get('4h','-')} / {rsi.get('1d','-')}"
-
         cards += f'''<div class="sig-card {cls}">
           <div class="sig-header"><div class="sig-symbol">{s["symbol"].replace("USDT","")}</div>{badge}</div>
           <div class="sig-price">${s["entry"]:,}</div>
@@ -318,22 +340,22 @@ def update_dashboard(state, latest):
           <div class="sig-info">
             <div class="sig-row"><span>RSI 15м/1ч/4ч/1д</span><span>{rsi_show}</span></div>
             <div class="sig-row"><span>Тренд (9 ТФ)</span><span>{up_count}/9 up</span></div>
-            <div class="sig-row"><span>Плечо</span><span class="warn">{lev:.1f}x</span></div>
+            <div class="sig-row"><span>Size</span><span>${size_usd:,.0f}</span></div>
             <div class="sig-row"><span>Риск</span><span class="neg">-${risk_usd:,.0f}</span></div>
             <div class="sig-row"><span>Цель</span><span class="pos">+${reward_usd:,.0f}</span></div>
           </div>
         </div>'''
 
-    # Open positions
+    # Open positions with Size $
     pos_rows = ""
     for sym, p_data in positions.items():
         cur = next((s for s in latest if s["symbol"]==sym), None)
         if not cur: continue
         pnl_pct = (cur["price"]/p_data["entry"]-1)*100
         pnl_usd = p_data["size"] * (cur["price"] - p_data["entry"])
+        size_usd = p_data["size"] * cur["price"]
         cls = "pos" if pnl_pct>0 else "neg" if pnl_pct<0 else ""
-        notional = p_data["size"] * cur["price"]
-        lev = notional / CAP_PER_POS if CAP_PER_POS > 0 else 0
+        lev = size_usd / CAP_PER_POS if CAP_PER_POS > 0 else 0
         total_range = p_data["take"] - p_data["stop"]
         progress = ((cur["price"] - p_data["stop"]) / total_range * 100) if total_range > 0 else 50
         pos_rows += f'''<tr>
@@ -341,6 +363,7 @@ def update_dashboard(state, latest):
           <td><span class="badge-long">LONG</span></td>
           <td>${p_data["entry"]:,}</td>
           <td class="{cls}"><b>${cur["price"]:,}</b></td>
+          <td><b>${size_usd:,.0f}</b></td>
           <td class="{cls}"><b>{pnl_pct:+.2f}%</b></td>
           <td class="{cls}"><b>${pnl_usd:+,.2f}</b></td>
           <td class="warn">{lev:.1f}x</td>
@@ -349,11 +372,12 @@ def update_dashboard(state, latest):
           <td><div class="progress-bar"><div class="progress-stop"></div><div class="progress-now" style="left:{progress}%"></div><div class="progress-take"></div></div></td>
         </tr>'''
     if not pos_rows:
-        pos_rows = '<tr><td colspan="10" style="text-align:center;color:#8b949e;padding:30px">нет открытых позиций</td></tr>'
+        pos_rows = '<tr><td colspan="11" style="text-align:center;color:#8b949e;padding:30px">нет открытых позиций</td></tr>'
 
-    # Closed trades history (last 20)
+    # History with PnL $
     hist_rows = ""
     for c in reversed(closed[-20:]):
+        pnl_usd = c.get("size",0) * (c.get("exit_price",0) - c.get("entry",0))
         cls = "pos" if c.get("pnl_pct", 0) > 0 else "neg"
         reason = c.get("exit_reason", "?")
         icon = "TAKE" if reason == "TAKE" else "STOP"
@@ -362,14 +386,17 @@ def update_dashboard(state, latest):
           <td>${c["entry"]:,}</td>
           <td>${c.get("exit_price", 0):,}</td>
           <td class="{cls}"><b>{c.get("pnl_pct", 0):+.2f}%</b></td>
+          <td class="{cls}"><b>${pnl_usd:+,.2f}</b></td>
           <td class="{'pos' if reason=='TAKE' else 'neg'}">{icon}</td>
-          <td style="font-size:11px;color:#8b949e">{c.get("entry_ts","")[:16]}</td>
         </tr>'''
     if not hist_rows:
-        hist_rows = '<tr><td colspan="6" style="text-align:center;color:#8b949e;padding:20px">сделок ещё нет — ждём первый сигнал</td></tr>'
+        hist_rows = '<tr><td colspan="6" style="text-align:center;color:#8b949e;padding:20px">сделок ещё нет</td></tr>'
 
     charts_json = json.dumps({s["symbol"]: s.get("charts", {}) for s in latest})
-    pnl_cls = "pos" if total_pnl_usd > 0 else "neg" if total_pnl_usd < 0 else ""
+    dep_cls = "pos" if current_deposit > CAPITAL else "neg" if current_deposit < CAPITAL else ""
+    today_cls = "pos" if today_realized_usd > 0 else "neg" if today_realized_usd < 0 else ""
+    total_cls = "pos" if total_realized_usd > 0 else "neg" if total_realized_usd < 0 else ""
+    unreal_cls = "pos" if unrealized_usd > 0 else "neg" if unrealized_usd < 0 else ""
     now_ts = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
 
     html = f"""<!DOCTYPE html><html><head><meta charset="utf-8">
@@ -381,15 +408,16 @@ h1{{color:#58a6ff;margin-bottom:6px;font-size:22px}}
 h2{{color:#58a6ff;margin:28px 0 12px;font-size:17px}}
 .time{{color:#8b949e;font-size:12px;margin-bottom:20px}}
 .total-header{{background:linear-gradient(135deg,#161b22,#1c2128);border:2px solid #30363d;border-radius:12px;padding:22px;margin-bottom:20px;text-align:center}}
-.total-label{{color:#8b949e;font-size:12px;text-transform:uppercase;letter-spacing:1px}}
+.total-label{{color:#8b949e;font-size:12px;text-transform:uppercase}}
 .total-value{{font-size:44px;font-weight:800;margin:8px 0;font-family:monospace}}
-.total-value.pos{{color:#3fb950;text-shadow:0 0 20px rgba(63,185,80,0.3)}}
-.total-value.neg{{color:#f85149;text-shadow:0 0 20px rgba(248,81,73,0.3)}}
+.total-value.pos{{color:#3fb950}}
+.total-value.neg{{color:#f85149}}
 .total-sub{{color:#8b949e;font-size:14px}}
-.top-stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:20px}}
-.stat{{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px;text-align:center}}
-.stat .lbl{{color:#8b949e;font-size:11px;text-transform:uppercase}}
-.stat .val{{font-size:20px;font-weight:700;margin-top:6px}}
+.profit-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}}
+.profit-card{{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}}
+.profit-card .pl{{color:#8b949e;font-size:11px;text-transform:uppercase}}
+.profit-card .pv{{font-size:22px;font-weight:700;margin-top:8px;font-family:monospace}}
+.pos{{color:#3fb950;font-weight:700}}.neg{{color:#f85149;font-weight:700}}.warn{{color:#d29922;font-weight:700}}
 .sig-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}}
 .sig-card{{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:16px}}
 .sig-long{{border-left:4px solid #3fb950;background:linear-gradient(135deg,#161b22,rgba(63,185,80,0.08))}}
@@ -415,7 +443,6 @@ table{{width:100%;border-collapse:collapse;margin:12px 0;background:#161b22;bord
 th{{color:#8b949e;font-size:11px;text-transform:uppercase;background:#1c2128;padding:10px 8px;text-align:right;font-weight:600}}
 td{{padding:12px 8px;text-align:right;border-bottom:1px solid #21262d}}
 th:first-child,td:first-child{{text-align:left}}
-.pos{{color:#3fb950;font-weight:700}}.neg{{color:#f85149;font-weight:700}}.warn{{color:#d29922;font-weight:700}}
 .badge-long{{background:rgba(63,185,80,0.15);color:#3fb950;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:700;border:1px solid #3fb950}}
 .progress-bar{{position:relative;height:6px;background:#21262d;border-radius:3px;width:70px;display:inline-block}}
 .progress-stop{{position:absolute;left:0;top:0;width:3px;height:6px;background:#f85149}}
@@ -436,18 +463,16 @@ canvas{{max-height:380px !important;height:380px !important}}
 <div class="time">Обновлено: {now_ts} | авто-refresh 30s | цикл #{state["cycle"]}</div>
 
 <div class="total-header">
-  <div class="total-label">💼 ПРИБЫЛЬ ПОРТФЕЛЯ СЕЙЧАС</div>
-  <div class="total-value {pnl_cls}">${total_pnl_usd:+,.2f}</div>
-  <div class="total-sub">{len(positions)}/{MAX_POSITIONS} позиций | общее плечо {total_lev:.1f}x</div>
+  <div class="total-label">💰 ДЕПОЗИТ СЕЙЧАС</div>
+  <div class="total-value {dep_cls}">${current_deposit:,.2f}</div>
+  <div class="total-sub">Начальный ${CAPITAL:,.0f} | {len(positions)}/{MAX_POSITIONS} позиций | плечо {total_lev:.1f}x</div>
 </div>
 
-<div class="top-stats">
-  <div class="stat"><div class="lbl">Позиции</div><div class="val">{len(positions)}/{MAX_POSITIONS}</div></div>
-  <div class="stat"><div class="lbl">Всего сигналов</div><div class="val pos">{len(signals_all)}</div></div>
-  <div class="stat"><div class="lbl">Закрыто</div><div class="val">{n_closed}</div></div>
-  <div class="stat"><div class="lbl">Win Rate</div><div class="val {'pos' if win_rate>50 else 'neg' if n_closed>0 else ''}">{win_rate:.0f}%</div></div>
-  <div class="stat"><div class="lbl">Ср. прибыль</div><div class="val pos">{avg_win:+.2f}%</div></div>
-  <div class="stat"><div class="lbl">Ср. убыток</div><div class="val neg">{avg_loss:+.2f}%</div></div>
+<div class="profit-grid">
+  <div class="profit-card"><div class="pl">📅 ПРИБЫЛЬ ЗА СЕГОДНЯ</div><div class="pv {today_cls}">${today_realized_usd:+,.2f}</div></div>
+  <div class="profit-card"><div class="pl">📊 ВСЕГО ЗАРАБОТАНО</div><div class="pv {total_cls}">${total_realized_usd:+,.2f}</div></div>
+  <div class="profit-card"><div class="pl">💼 В ОТКРЫТЫХ</div><div class="pv {unreal_cls}">${unrealized_usd:+,.2f}</div></div>
+  <div class="profit-card"><div class="pl">🎯 СДЕЛОК</div><div class="pv">{n_closed} ({win_rate:.0f}% WR)</div></div>
 </div>
 
 <h2>📊 Сигналы сейчас</h2>
@@ -455,13 +480,13 @@ canvas{{max-height:380px !important;height:380px !important}}
 
 <h2>💼 Открытые позиции</h2>
 <table>
-<tr><th>Монета</th><th>Тип</th><th>Вход</th><th>Сейчас</th><th>PnL %</th><th>PnL $</th><th>Плечо</th><th>Stop</th><th>Take</th><th>Прогресс</th></tr>
+<tr><th>Монета</th><th>Тип</th><th>Вход</th><th>Сейчас</th><th>Size $</th><th>PnL %</th><th>PnL $</th><th>Плечо</th><th>Stop</th><th>Take</th><th>Прогресс</th></tr>
 {pos_rows}
 </table>
 
-<h2>📜 История закрытых сделок ({n_closed})</h2>
+<h2>📜 История закрытых ({n_closed})</h2>
 <table>
-<tr><th>Монета</th><th>Вход</th><th>Выход</th><th>PnL %</th><th>Причина</th><th>Дата входа</th></tr>
+<tr><th>Монета</th><th>Вход</th><th>Выход</th><th>PnL %</th><th>PnL $</th><th>Причина</th></tr>
 {hist_rows}
 </table>
 
@@ -522,6 +547,7 @@ Object.keys(CHARTS).forEach(sym => {{
 if (Object.keys(CHARTS).length > 0) {{ currentSym = Object.keys(CHARTS)[0]; renderChart(); }}
 </script>
 </body></html>"""
+
     (DASH/"live_stats.html").write_text(html)
 
 def one_cycle(ex, state):

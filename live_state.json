@@ -1298,7 +1298,7 @@
     }
   ],
   "pushes": 78,
-  "cycle": 1008,
+  "cycle": 1011,
   "positions": {
     "BTCUSDT": {
       "symbol": "BTCUSDT",
@@ -1314,13 +1314,13 @@
     "XRPUSDT": {
       "symbol": "XRPUSDT",
       "entry": 1.5522,
-      "stop": 1.513343,
+      "stop": 1.587069,
       "initial_stop": 1.513343,
       "take": 1.649343,
       "size": 2573.529412,
       "entry_ts": "2026-09-22T16:20:50.532795+00:00",
       "confidence": 82,
-      "trail_updates": 0
+      "trail_updates": 1
     },
     "LINKUSDT": {
       "symbol": "LINKUSDT",
