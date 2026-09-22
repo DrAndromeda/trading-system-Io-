@@ -1187,10 +1187,118 @@
       "size": 2573.529412,
       "rr": 2.5,
       "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T16:53:57.032844+00:00",
+      "symbol": "LINKUSDT",
+      "signal": "LONG",
+      "confidence": 83,
+      "price": 13.02,
+      "rsi": {
+        "15m": 52.1,
+        "1h": 53.7,
+        "4h": 75.1,
+        "6h": 62.4,
+        "12h": 80.3,
+        "1d": 55.1,
+        "3d": 74.3,
+        "1w": 70.9,
+        "1M": 43.2
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "down"
+      },
+      "atr_pct": 0.86,
+      "entry": 13.02,
+      "stop": 12.796,
+      "take": 13.58,
+      "size": 446.428571,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T16:54:03.110038+00:00",
+      "symbol": "SOLUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 117.63,
+      "rsi": {
+        "15m": 55.4,
+        "1h": 55.8,
+        "4h": 82.0,
+        "6h": 67.1,
+        "12h": 82.1,
+        "1d": 65.1,
+        "3d": 83.0,
+        "1w": 77.6,
+        "1M": 37.4
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.59,
+      "entry": 117.63,
+      "stop": 116.24,
+      "take": 121.105,
+      "size": 71.942446,
+      "rr": 2.5,
+      "funding_ann": 0
+    },
+    {
+      "ts": "2026-09-22T17:40:55.883429+00:00",
+      "symbol": "ETHUSDT",
+      "signal": "LONG",
+      "confidence": 86,
+      "price": 2751.66,
+      "rsi": {
+        "15m": 47.3,
+        "1h": 56.2,
+        "4h": 80.7,
+        "6h": 67.9,
+        "12h": 82.1,
+        "1d": 67.8,
+        "3d": 84.3,
+        "1w": 80.9,
+        "1M": 41.0
+      },
+      "trend": {
+        "15m": "up",
+        "1h": "up",
+        "4h": "up",
+        "6h": "up",
+        "12h": "up",
+        "1d": "up",
+        "3d": "up",
+        "1w": "down",
+        "1M": "up"
+      },
+      "atr_pct": 0.46,
+      "entry": 2751.66,
+      "stop": 2726.521429,
+      "take": 2814.506429,
+      "size": 3.977951,
+      "rr": 2.5,
+      "funding_ann": 0
     }
   ],
   "pushes": 78,
-  "cycle": 984,
+  "cycle": 996,
   "positions": {
     "BTCUSDT": {
       "symbol": "BTCUSDT",
@@ -1212,6 +1320,39 @@
       "size": 2573.529412,
       "entry_ts": "2026-09-22T16:20:50.532795+00:00",
       "confidence": 82,
+      "trail_updates": 0
+    },
+    "LINKUSDT": {
+      "symbol": "LINKUSDT",
+      "entry": 13.02,
+      "stop": 12.796,
+      "initial_stop": 12.796,
+      "take": 13.58,
+      "size": 446.428571,
+      "entry_ts": "2026-09-22T16:54:08.611070+00:00",
+      "confidence": 83,
+      "trail_updates": 0
+    },
+    "SOLUSDT": {
+      "symbol": "SOLUSDT",
+      "entry": 117.63,
+      "stop": 116.24,
+      "initial_stop": 116.24,
+      "take": 121.105,
+      "size": 71.942446,
+      "entry_ts": "2026-09-22T16:54:08.611070+00:00",
+      "confidence": 86,
+      "trail_updates": 0
+    },
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "entry": 2751.66,
+      "stop": 2726.521429,
+      "initial_stop": 2726.521429,
+      "take": 2814.506429,
+      "size": 3.977951,
+      "entry_ts": "2026-09-22T17:41:25.850860+00:00",
+      "confidence": 86,
       "trail_updates": 0
     }
   },
